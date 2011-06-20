@@ -4,7 +4,6 @@ gitolite + ikiwiki !!!
 
 All wikis are supposed to have a [[SandBox]], so this one does too.
 
-#ARGH2!!!
 ----
 
 This wiki is powered by [[ikiwiki]].
