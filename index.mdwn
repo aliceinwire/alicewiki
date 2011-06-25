@@ -1,8 +1,21 @@
+After many try is come to live !
+
+This is the personal wiki site of Alice ferrazzi
+
+Things here:
+
+* contact info
+* a blog
+* a todo list (because i'm working in so many project and usually i forgot what i have to do!)
+* elsewhere on the web (other web stuff)
+* a resume in pdf form
+* a [[SandBox]], because wikis are supposed to have them
+
 IT WORKS!!!
 
 gitolite + ikiwiki !!!
 
-All wikis are supposed to have a [[SandBox]], so this one does too.
+
 
 ----
 
