@@ -5,10 +5,10 @@ This is the personal wiki site of Alice ferrazzi
 Things here:
 
 * [[contact]] info
-* a [[http://drunkgeisha.blogspot.com|blog]]
+* a [[http://drunkgeisha.blogspot.com | blog]]
 * a [[todo]] list (because i'm working in so many project and usually i forgot what i have to do!)
 * [[elsewhere]] on the web (other web stuff)
-* a [[http://goo.gl/sBTNJ|resume using googledocs]]
+* a [[http://goo.gl/sBTNJ | resume using googledocs]]
 * a [[SandBox]], because wikis are supposed to have them
 
 IT WORKS!!!
