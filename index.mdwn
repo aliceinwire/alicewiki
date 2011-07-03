@@ -15,6 +15,3 @@ Things here:
 * a [[resume using googledocs|http://goo.gl/sBTNJ]]
 * a [[SandBox]], because wikis are supposed to have them
 
-IT WORKS!!!
-
-gitolite + ikiwiki !!!
