@@ -4,6 +4,8 @@ After many try is come to live !
 
 This is the personal wiki site of Alice ferrazzi
 
+![aliceinwire!](/data/aliceinwire.png)
+
 Things here:
 
 * [[contact]] info
@@ -16,9 +18,3 @@ Things here:
 IT WORKS!!!
 
 gitolite + ikiwiki !!!
-
-
-
-----
-
-This wiki is powered by [[ikiwiki]].
