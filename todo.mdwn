@@ -1,3 +1,6 @@
 My infinite Todo list:
 
-* now looking for a loop
+* take CCNA exame and pass it 
+* improve my japanese
+* be a Debian Developer
+
