@@ -3,4 +3,5 @@ My infinite Todo list:
 * take CCNA exame and pass it 
 * improve my japanese
 * be a Debian Developer
-
+* learn to use gitolite and ikiwiki
+* learn apache2
