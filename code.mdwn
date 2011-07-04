@@ -1,0 +1,10 @@
+Gitweb for my personal git repositories can be found
+[here](http://git.aliceinwire.net/). Read-only access is available for these
+repositories using the git protocol:
+
+    git://git.aliceinwire.net/git/repo-name.git
+
+    Source control for my [Debian](http://www.debian.org/) packages is
+    found on [git.debian.org](http://git.debian.org/), generally under the
+    _collab-maint_ namespace.
+
