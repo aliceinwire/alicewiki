@@ -9,7 +9,7 @@ This is the personal wiki site of Alice ferrazzi
 Things here:
 
 * [[contact]] info
-* a [[blog|http://drunkgeisha.blogspot.com]]
+* a [[blog]]
 * [[code]] she has written
 * a [[todo]] list (because i'm working in so many project and usually i forgot what i have to do!)
 * [[elsewhere]] on the web (other web stuff)
