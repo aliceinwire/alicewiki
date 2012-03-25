@@ -8,3 +8,5 @@ In the future i'm customizing it more.
 
 So bye bye old blog!
 Welcom Ikiwiki
+
+.
