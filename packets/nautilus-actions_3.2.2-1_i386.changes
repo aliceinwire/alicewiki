@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 27 Mar 2012 15:02:55 +0200
+Source: nautilus-actions
+Binary: nautilus-actions
+Architecture: source i386
+Version: 3.2.2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Alice Ferrazzi <aliceinwire@gnumerica.org>
+Changed-By: Alice Ferrazzi <aliceinwire@gnumerica.org>
+Description: 
+ nautilus-actions - nautilus extension to configure programs to launch
+Changes: 
+ nautilus-actions (3.2.2-1) unstable; urgency=low
+ .
+   [ Alice Ferrazzi ]
+   * New upstream development release.
+     - debian/control.in:
+       - Bump Standards-Version to 3.9.3; no changes required.
+     - debian/rules:
+       - Fixed duplicate-changelog-files
+Checksums-Sha1: 
+ c2d13951dc705b7d192cd825c1338196b00defb4 1596 nautilus-actions_3.2.2-1.dsc
+ a68d54bd2620d506d3b0272ee5ad009afd5f1a3e 15250454 nautilus-actions_3.2.2.orig.tar.gz
+ 351d25765592c382ea19f99ec398c4763b04e013 9039 nautilus-actions_3.2.2-1.debian.tar.gz
+ c08bd256267823e1d98314e473d0c2f39b0a51e7 17272164 nautilus-actions_3.2.2-1_i386.deb
+Checksums-Sha256: 
+ 028be7c0b4a803635ff81d3992215409c7d33d21ae266f36772455d1d43c0d02 1596 nautilus-actions_3.2.2-1.dsc
+ f6d0bef1c20e6000231ed9518a31ab74a92ef810eef2546e8dabcb25f831fcf4 15250454 nautilus-actions_3.2.2.orig.tar.gz
+ d814fa828e9789568afc0d1f2aa35e116fe9907fac99f98dc43d109475c621a2 9039 nautilus-actions_3.2.2-1.debian.tar.gz
+ 74929261d2de264d4c185abe8d57ecfca5cbfa687f240990d700100cb890c91e 17272164 nautilus-actions_3.2.2-1_i386.deb
+Files: 
+ a95ceb00dd6e7ac1779c191ff2509f71 1596 gnome optional nautilus-actions_3.2.2-1.dsc
+ 1abeb760bb8863f0bd7be4692bff4a44 15250454 gnome optional nautilus-actions_3.2.2.orig.tar.gz
+ bb24527221b72b090460b0fe431a7a0e 9039 gnome optional nautilus-actions_3.2.2-1.debian.tar.gz
+ 35d3d756b1af99a9c21074693caec525 17272164 gnome optional nautilus-actions_3.2.2-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iEYEARECAAYFAk+EMzgACgkQIjqejaX9O3DXQACcClPpNmp60gAe9EAdkeIgcElS
+UFUAn2YxBgzV+jeCPM6pTU6gFOcfswN6
+=q1g+
+-----END PGP SIGNATURE-----
