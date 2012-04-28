@@ -7,6 +7,6 @@ After some problem with rps as i told in the last post, i made ikiwiki and gitol
 In the future i'm customizing it more.
 
 So bye bye old blog!
-Welcom Ikiwiki
+Welcome Ikiwiki
 
 .
