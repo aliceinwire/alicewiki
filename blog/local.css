@@ -1,9 +1,0 @@
-.pagecloud {
-	  width: 25%;
-	    clear: right;
-    }
-
-    /* This isn't quite right, but it's a quick hack that fixes the front page */
-    .inlinepage {
-	      max-width: 800px;
-      }
