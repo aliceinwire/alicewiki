@@ -8,5 +8,5 @@ feedurl="http://identi.ca/api/statuses/user_timeline/aliceinwire.atom"]]
 
 
 
-[[!inline  pages="blog/* and !*/Discussion and !*/local.css" show="10" rootpage="blog"]]
+[[!inline  pages="page(blog/*) and !*/Discussion and !*/local.css" show="10" rootpage="blog"]]
 
