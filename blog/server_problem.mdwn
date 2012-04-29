@@ -1,24 +1,22 @@
-it's finally arrived my debian swiss cyber tool
-after some post issue, italian post is really a aweful service...
-they made me pay 26,40 euro of post customs :(
-
-thank kaeso for your patience
+it's finally arrived my debian swiss cyber tool  
+after some post issue, italian post is really a aweful service...  
+they made me pay 26,40 euro of post customs :(  
+  
+thank kaeso for your patience  
 
 [[!img  image/2012-04-27-20-57-35-925.jpg size="600x450" alt="swiss cybertool"]]
 
-in this days i had some server problem with the iscsi
-http://paste.debian.net/166259/
-
-lucky after the reboot the error was gone
-
-i had updated nautilus-actions at 3.2.2 on debian with the upload of my sponsor Christine
-
-but for the most im studing for my ccna exam that i had set at 20 june at 12:00
-
-after that i hope to have time for work on Python,more Debian packets,Django,perl and open source networking
-
-im also using mosh http://mosh.mit.edu/ made by keithw
-is really fast and stable, i love it !
-and i can work on my server also with my slooow mobile connection
-
-
+in this days i had some server problem with the iscsi  
+http://paste.debian.net/166259/  
+  
+lucky after the reboot the error was gone  
+  
+i had updated nautilus-actions at 3.2.2 on debian with the upload of my sponsor Christine  
+  
+but for the most im studing for my ccna exam that i had set at 20 june at 12:00  
+  
+after that i hope to have time for work on Python,more Debian packets,Django,perl and open source networking  
+  
+im also using mosh http://mosh.mit.edu/ made by keithw  
+is really fast and stable, i love it !  
+and i can work on my server also with my slooow mobile connection  
