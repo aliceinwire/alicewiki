@@ -1,3 +1,11 @@
-my first blog !
+[[!meta title="blog"]]
+[[!template id=note text="""
+[[!aggregate expirecount=5 name="dents" url="http://identi.ca/aliceinwire"
+feedurl="http://identi.ca/api/statuses/user_timeline/aliceinwire.atom"]]
+[[!inline pages="internal(./blog/dents/*)" template=microblog show=5 feeds=no]] """]]
+[[!pagestats pages="./tags/*"]]
+
+
+
 
 [[!inline  pages="blog/* and !*/Discussion" show="10" rootpage="blog"]]
