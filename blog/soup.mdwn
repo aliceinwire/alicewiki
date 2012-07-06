@@ -1,4 +1,5 @@
-I made this Curried Zucchini Soup, thanks for Christine Spang link of the recipe.  
+[[!meta title="Vegetable Curried Zucchini Soup"]]
+I made this Curried Zucchini Soup, thanks Christine Spang link of the recipe.  
 i used 4 cups vegetable broth instead of the 4 cups chicken broth in the recipe and it was really nice,  
 i love the apple and zucchini flavor in the soup, the curry is essential!  
   
@@ -27,4 +28,7 @@ Reduce heat to low, cover, and simmer for 20 minutes.
 Carefully puree the hot soup in the blender in small batches.  
 Add salt and pepper to taste. Serve soup garnished with cilantro or Italian parsley leaves.  
 Serves 4 to 6.  
+
+this is the [orginal recipe link](http://southernfood.about.com/od/soupandstew/r/bl60804c.htm?rd=1)  
+
 [[!tag tags/recipe tags/soup]]
