@@ -2,7 +2,7 @@ I made this Curried Zucchini Soup, thanks for Christine Spang link of the recipe
 i used 4 cups vegetable broth instead of the 4 cups chicken broth in the recipe and it was really nice,  
 i love the apple and zucchini flavor in the soup, the curry is essential!  
   
-[[!img  /images/soup.jpg size="600x450" alt="hacking on train"]]  
+[[!img  /image/soup.jpg size="600x450" alt="hacking on train"]]  
   
 Here's the recipe:  
 A light and flavorful zucchini soup recipe with curry powder and apples.  
