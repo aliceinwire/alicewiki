@@ -1,0 +1,17 @@
+[[!meta title="Ipv6 and Veggie Burger"]]
+
+Im living in Tokyo, Itabashi-Ku now!  
+Is happen all so fast that i hadn\`t realized already... it sounds so strange think, that i did to come here...  
+Unfortuatly not all is good and i had failed my CCNA with a point of 815/825 for pass, less than a answer...  
+But i will retry it next month here.  
+I had also update my website for the World Ipv6 day (6 june), so now you can find it with ipv6 at [ipv6.aliceinwire.net](http://ipv6.aliceinwire.net)   
+  
+Last week i found that at J.S. Burgers Cafe chains in Tokyo they make a nice Veggie Burger for 900￥  
+  
+I don\`t know the recipe but is really teasty and also the fry potatoes are so good.  
+  
+
+[[!img  /image/veggieburger.jpg size="600x450" alt="veggieburger"]]  
+
+[[!tag tags/ipv6 tags/CCNA tags/veggie]]
+
