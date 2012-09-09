@@ -1,0 +1,4 @@
+[[!meta title="pages tagged japanese"]]
+
+[[!inline pages="tagged(tags/japanese)" actions="no" archive="yes"
+feedshow=10]]
