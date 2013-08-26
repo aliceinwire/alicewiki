@@ -8,6 +8,7 @@ i also get into another [bug_482512](https://bugs.gentoo.org/show_bug.cgi?id=482
 devel/py-freebsd: 'CTLTYPE_QUAD' undeclared (first use in this function) and found the [patch](http://svnweb.freebsd.org/ports/head/devel/py-freebsd/files/freebsd9_patch-src-sysctl.c?revision=300896&view=co)  
 on freebsd forum added in the bug  
 
+i hope to make this post at list weekly
 
 
 [[!tag tags/gentoo tags/bugs]]
