@@ -1,0 +1,13 @@
+[[!meta title="Today Gentoo bug statistics - 26 August 2013"]]
+
+found [bug_481296](https://bugs.gentoo.org/show_bug.cgi?id=481296) on app-portage/pfl  
+caused by using UUID for genereting a unique identifier for [pfl](http://www.portagefilelist.de/)  
+but on freebsd i didn't set any UUID.
+
+i also get into another [bug_482512](https://bugs.gentoo.org/show_bug.cgi?id=482512)  
+devel/py-freebsd: 'CTLTYPE_QUAD' undeclared (first use in this function) and found the [patch](http://svnweb.freebsd.org/ports/head/devel/py-freebsd/files/freebsd9_patch-src-sysctl.c?revision=300896&view=co)  
+on freebsd forum added in the bug  
+
+
+
+[[!tag tags/gentoo tags/bugs]]
