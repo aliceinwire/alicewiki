@@ -1,36 +1,36 @@
 [[!meta title="Weekly Gentoo bug statistics - 01 September 2013"]]
 
-Updated my Wget alias command for download attachments file from bugzilla with login, now I added --content-disposition:
-- first make the cookies file
-wget --save-cookies wget-cookies.txt --cookies=on --output-document=logindetails.html http://bugzilla_site/bugzilla/index.cgi?Bugzilla_login=username@email.com\&Bugzilla_password=password\&GoAheadAnd
-- then in .bashrc or .zshrc:
-alias wgetDL='wget --load-cookies ~/bin/wget-cookies.txt --content-disposition'
+Updated my Wget alias command for download attachments file from bugzilla with login, now I added --content-disposition:  
+- first make the cookies file  
+wget --save-cookies wget-cookies.txt --cookies=on --output-document=logindetails.html http://bugzilla_site/bugzilla/index.cgi?Bugzilla_login=username@email.com\&Bugzilla_password=password\&GoAheadAnd  
+- then in .bashrc or .zshrc:  
+alias wgetDL='wget --load-cookies ~/bin/wget-cookies.txt --content-disposition'  
 
-       --content-disposition
-           If this is set to on, experimental (not fully-functional) support for "Content-Disposition" headers is enabled. This can currently
-           result in extra round-trips to the server for a "HEAD" request, and is known to suffer from a few bugs, which is why it is not
-           currently enabled by default.
+       --content-disposition  
+           If this is set to on, experimental (not fully-functional) support for "Content-Disposition" headers is enabled. This can currently  
+           result in extra round-trips to the server for a "HEAD" request, and is known to suffer from a few bugs, which is why it is not  
+           currently enabled by default.  
 
-           This option is useful for some file-downloading CGI programs that use "Content-Disposition" headers to describe what the name of a
-           downloaded file should be.
+           This option is useful for some file-downloading CGI programs that use "Content-Disposition" headers to describe what the name of a  
+           downloaded file should be.  
 
-Reported Fix upstream for:
-[Bug 450742](https://bugs.gentoo.org/show_bug.cgi?id=450742) - (CVE-2012-6086) net-analyzer/zabbix: Improper use of cURL API might lead to improper SSL certificate verification (MiTM) (CVE-2012-6086)
+Reported Fix upstream for:  
+[Bug 450742](https://bugs.gentoo.org/show_bug.cgi?id=450742) - (CVE-2012-6086) net-analyzer/zabbix: Improper use of cURL API might lead to improper SSL certificate verification (MiTM) (CVE-2012-6086)  
 
-From zabbix.com report [ZBX-5924](https://support.zabbix.com/browse/ZBX-5924) in 2.0.8 this problem is been fixed in 1.8.18rc1, 2.0.8rc1, 2.1.2
-so now i can use more uptdated Curl because the old one had some problem on work with Freebsd
+From zabbix.com report [ZBX-5924](https://support.zabbix.com/browse/ZBX-5924) in 2.0.8 this problem is been fixed in 1.8.18rc1, 2.0.8rc1, 2.1.2  
+so now i can use more uptdated Curl because the old one had some problem on work with Freebsd  
 
-Yesterday i got [editing priviledge](https://bugs.gentoo.org/show_bug.cgi?id=483008) on Gentoo Bugzilla for helping in [The Gentoo Bug Wranglers Project](https://www.gentoo.org/proj/en/qa/bug-wranglers/index.xml), Thanks to TomWij for advocating and mentoring :)
+Yesterday i got [editing priviledge](https://bugs.gentoo.org/show_bug.cgi?id=483008) on Gentoo Bugzilla for helping in [The Gentoo Bug Wranglers Project](https://www.gentoo.org/proj/en/qa/bug-wranglers/index.xml), Thanks to TomWij for advocating and mentoring :)  
 
-Made zabbix ebuild for 2.0.8 and posted on [BUG-482810](https://bugs.gentoo.org/show_bug.cgi?id=482810) i removed the curl restriction and updated to EAPI=5, tested on freebsd and looks working.
+Made zabbix ebuild for 2.0.8 and posted on [BUG-482810](https://bugs.gentoo.org/show_bug.cgi?id=482810) i removed the curl restriction and updated to EAPI=5, tested on freebsd and looks working.  
 
-Checked about making ebuild for bhyve and Vramsteg
-Vramsteg have no package so i think to make a 9999 ebuild for get it directly for git in the meantime
+Checked about making ebuild for bhyve and Vramsteg  
+Vramsteg have no package so i think to make a 9999 ebuild for get it directly for git in the meantime  
 
-I also requested to be added in the [larrythecow.org](http://larrythecow.org) planet [FL-698](http://bugs.funtoo.org/browse/FL-698)
+I also requested to be added in the [larrythecow.org](http://larrythecow.org) planet [FL-698](http://bugs.funtoo.org/browse/FL-698)  
 
-I'm requesting a booth space at the OSC Tokyo Fall 2013 for Gentoo-jp community, so if you pass by, please say Hello :)
+I'm requesting a booth space at the OSC Tokyo Fall 2013 for Gentoo-jp community, so if you pass by, please say Hello :)  
 
-And I'm intesifying my Japanese study so my gentoo activity will be a bit slow...
+And I'm intesifying my Japanese study so my gentoo activity will be a bit slow...  
 
 [[!tag tags/gentoo tags/bugs tags/weekly]]
