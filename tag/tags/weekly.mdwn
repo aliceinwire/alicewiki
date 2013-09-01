@@ -1,0 +1,4 @@
+[[!meta title="pages tagged tags/weekly"]]
+
+[[!inline pages="tagged(tags/weekly)" actions="no" archive="yes"
+feedshow=10]]
