@@ -2,9 +2,9 @@
 
 Updated my Wget alias command for download attachments file from bugzilla with login, now I added --content-disposition:
 - first make the cookies file
-#wget --save-cookies wget-cookies.txt --cookies=on --output-document=logindetails.html http://bugzilla_site/bugzilla/index.cgi?Bugzilla_login=username@email.com\&Bugzilla_password=password\&GoAheadAnd
+wget --save-cookies wget-cookies.txt --cookies=on --output-document=logindetails.html http://bugzilla_site/bugzilla/index.cgi?Bugzilla_login=username@email.com\&Bugzilla_password=password\&GoAheadAnd
 - then in .bashrc or .zshrc:
-#alias wgetDL='wget --load-cookies ~/bin/wget-cookies.txt --content-disposition'
+alias wgetDL='wget --load-cookies ~/bin/wget-cookies.txt --content-disposition'
 
        --content-disposition
            If this is set to on, experimental (not fully-functional) support for "Content-Disposition" headers is enabled. This can currently
