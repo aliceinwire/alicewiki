@@ -1,7 +1,7 @@
 [[!meta title="blog"]]
 [[!template id=note text="""
-[[!aggregate expirecount=5 name="dents" url="http://identi.ca/aliceinwire"
-feedurl="http://identi.ca/api/statuses/user_timeline/aliceinwire.atom"]]
+[[!aggregate expirecount=5 name="dents" url="https://twitter.com/aliceinwire"
+feedurl="http://ox4.org/~charlie/cgi-bin/twitter_user_to_rss.pl?user=aliceinwire&fetch=+Fetch+RSS+"]]
 [[!inline pages="internal(./blog/dents/*)" template=microblog show=5 feeds=no]] """]]
 
 
