@@ -1,15 +1,15 @@
 [[!meta title="Weekly Gentoo bug statistics - 09 September 2013"]]
 
 This week was so busy...  
-So i couldn't do much :/ but i hope is enough...
-
+So i couldn't do much :/ but i hope is enough...  
+  
 Zabbix 2.0.8 as been bumped in CVS \o/  
 Bump for Zabbix-2.0.8, Thanks to Alice Ferrazzi alice.ferrazzi@gmail.com and  
 Rodrigo Severo rodrigo@fabricadeideias.com - Closes bug [BUG-482810](https://bugs.gentoo.org/show_bug.cgi?id=482810).  
   
 I could manage only two BugWrangler:  
 [BUG-483570](https://bugs.gentoo.org/show_bug.cgi?id=483570) [BUG-483502](https://bugs.gentoo.org/show_bug.cgi?id=483502)  
-
+  
 I made Vramsteg ebuild:  
 Adds progress-bar capability to a script/program.  
 [BUG-483962](https://bugs.gentoo.org/show_bug.cgi?id=483962)  
@@ -19,17 +19,17 @@ Can detect anomalous data in a numeric stream.
 Clog ebuild:  
 Is a colorized log tail utility.  
 [BUG-484218](https://bugs.gentoo.org/show_bug.cgi?id=484218)  
-
+  
 Made a patch for =app-portage/mirrorselect-? with =dev-lang/python-3.2 - TypeError: 'module' object is not callable  
 [BUG 483232](https://bugs.gentoo.org/show_bug.cgi?id=483232)  
-
+  
 found a problem on fowners root:root  
 Freebsd have no root group
 using fowners root:0 /var/cache/revdep-rebuild/ for freebsd compatibility, thx to Yuta SATOH 
 [BUG-484006](https://bugs.gentoo.org/show_bug.cgi?id=484006)  
-
+  
 Thanks @drobbins and all #Funtoo team for adding me in [larrythecow.org](http://larrythecow.org) planet :D  
-
+  
 and still have to request a booth space at the OSC Tokyo Fall 2013 for Gentoo-jp community, so if you pass by, please say Hello :)  
 
 [[!tag tags/gentoo tags/bugs tags/weekly]]
