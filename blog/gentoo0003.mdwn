@@ -4,38 +4,47 @@ This Month was so much busy... as usual...
   
 This time took me so much time thinking about what to write here i don't know why.  
   
-Anyway I'm making [Pyherd](https://github.com/aliceinwire/pyherd) a simple  
-project for retrive herd and maintainer e-mail from xml metadata, is not  
-finished yet, but my intent is to make it work with [pybugz](https://github.com/williamh/pybugz) for managing the bugzilla Gentoo  
+Anyway I'm making [Pyherd](https://github.com/aliceinwire/pyherd)  
+a simple project for retrive herd and maintainer e-mail from xml metadata,  
+is not finished yet, but my intent is to make it work with [pybugz](https://github.com/williamh/pybugz) for managing the bugzilla Gentoo  
 bugz directly from command line and make the Bug-wranglers job more easy.  
   
-I tried to use python-for-android for compile a dictionary 
-[midori](https://github.com/blagarde/midori)  , it tooks so many time to make 
-[python for androidi](https://github.com/kivy/python-for-android) work because  
+I tried to use python-for-android for compile a dictionary [midori](https://github.com/blagarde/midori),  
+it tooks so many time to make [python for androidi](https://github.com/kivy/python-for-android) work because  
 of some incompatibility with recent android-ndk version but it worked using  
 ANDROIDAPI=14 and export ANDROIDNDKVER=r8e [issue](https://github.com/kivy/python-for-android/issues/159).  
 so i contribute adding [pyparsing-recipe](https://github.com/kivy/python-for-android/pull/160) needed for make the dictionary work.  
-Someone on irc also told be to use --orientation=sensor in the build.py arguments  for use the mobile phone orientation 
+Someone on irc also told be to use --orientation=sensor in the build.py arguments  
+for use the mobile phone orientation 
 sensor, really helpfull.  
   
-I also get interested in [Virgil](https://code.google.com/p/virgil/) and started 
-to write some code but I need more pratice,  so nothing interesting for now.  
+I also get interested in [Virgil](https://code.google.com/p/virgil/) and started to write some code but I need more pratice,  
+so nothing interesting for now.  
   
-I was also present at [Open Source Conference fall 
-2013](http://www.ospn.jp/osc2013-fall/) #osc13tk with Gentoo booth and i had lot 
-of fun!  thanks to everyone!!!  sorry if i was not always at the booth.  I gived also 
-a lightining talk about how to join Gentoo,  this time in english but next time for sure 
-in japanese.  thanks for all the twitter message !  And let's help in Gentoo 
-project always more!  there are always many things to do!    [[!img /image/BXKt3tYCcAArn6.jpg
-size="600x450" alt="#osc13tk"]]    You can find the presentation slide here [How 
-to join Gentoo and why](https://github.com/aliceinwire/JoinGentoo)  please if 
-you think that something is not correct or imprecise send a pull request!  i'm 
-working also at the japanese translation.  
+I was also present at [Open Source Conference fall 2013](http://www.ospn.jp/osc2013-fall/) #osc13tk with Gentoo booth and i had lot of fun!  
+thanks to everyone!!!  
+sorry if i was not always at the booth.  
+I gived also a lightining talk about how to join Gentoo,  
+this time in english but next time for sure in japanese.  
+thanks for all the twitter message !  
+And let's help in Gentoo project always more!  
+there are always many things to do!  
+  
+  
+[[!img /image/BXKt3tYCcAArn6.jpg size="600x450" alt="#osc13tk"]]  
+  
+  
+You can find the presentation slide here [How to join Gentoo and why](https://github.com/aliceinwire/JoinGentoo)  
+please if you think that something is not correct or imprecise send a pull request!  
+i'm working also at the japanese translation to use next time.  
   
 I posted some git ebuild patch:  
-[BUG-487902](https://bugs.gentoo.org/show_bug.cgi?id=487902)  and a freebsd 
-ebuild patch:  [BUG 482512](https://bugs.gentoo.org/show_bug.cgi?id=482512) about 
-error: 'CTLTYPE\_QUAD' undeclared (first use in this function)    And doing 
+[BUG-487902](https://bugs.gentoo.org/show_bug.cgi?id=487902)  
+and a freebsd 
+ebuild patch:  
+[BUG 482512](https://bugs.gentoo.org/show_bug.cgi?id=482512) about 
+error: 'CTLTYPE\_QUAD' undeclared (first use in this function)  
+And doing 
 Bug-wranglers work on daily basis.  
   
   
