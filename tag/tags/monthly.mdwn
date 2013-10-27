@@ -1,0 +1,4 @@
+[[!meta title="pages tagged tags/monthly"]]
+
+[[!inline pages="tagged(tags/monthly)" actions="no" archive="yes"
+feedshow=10]]
