@@ -4,11 +4,6 @@ e-mail:
 
 * alice.ferrazzi@gmail.com
 
-jabber:
-
-* aliceinwire@jabber.org
-
 IRC:
 
-* aliceinwire (OFTC, GIMPNet, Freenode)
-
+* alicef (Freenode)
