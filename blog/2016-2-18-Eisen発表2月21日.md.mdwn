@@ -1,6 +1,6 @@
 ITカレッジ卒業展2016年2月21日  
 クラスの代表チームとしてEisen発表をします。  
-同時に私が作ったEisenをgithubにオープンソース'ソフ卜ウェア公開します。  
+同時に私が作ったEisenをgithubにオープンソース'ソフ卜ウェアとして公開します。  
 pull requestで誰でもコントリビューションが出来ます。  
 [Eisen](https://github.com/eisen-dev)  
   
