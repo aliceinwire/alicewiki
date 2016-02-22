@@ -3,7 +3,10 @@ but i will enjoy a bit of snow after many months of just studing and coding :)
   
 and if you are not afraid to touch the code,  
 you are anyway welcome to help opening issue and sending pull request:  
-https://github.com/eisen-dev  
+[https://github.com/eisen-dev](https://github.com/eisen-dev)  
+
+or send message to twitter:  
+[https://twitter.com/eisen_dev](https://twitter.com/eisen_dev)
   
 If I have bandwith I will anyway try to replay to issue question :D  
   
