@@ -1,0 +1,26 @@
+This week was a also enough busy, studying for exams.   
+Anyway now i have a bit of freetime and I'm going on developing eisen.  
+
+As now I'm trying to make the init file for autostart eisen front and eisen engine using supervisor and making translation in English and Japanese for gettext.
+
+The news of this week are:  
+####  [eisen website](http://eisen-dev.github.io/) 
+ - Added screenshots and Dynamic language switcher 
+(thanks to [slick](http://kenwheeler.github.io/) and [jquery lang js](https://github.com/Irrelon/jquery-lang-js)).  
+
+####  [eisen documentation](https://github.com/eisen-dev/eisen_docs)
+ - Added the freenode channel [#eisen](http://webchat.freenode.net/?channels=eisen)  
+ - Added explanation about cloning git repository before using vagrant up (thanks to ytooyama)
+
+#### [eisen front](https://github.com/eisen-dev/eisen_front)  
+ - Added language switcher in the Settings options  
+<img src="https://github.com/eisen-dev/eisen_docs/blob/master/images/screenshot-localhost%208080%202016-03-14%2002-34-07.png?raw=true" width="600"/>  
+ - Fixed the recipe and tasks modals  
+ - Added recipe registration  
+ - Adding the Host Manager as active by default.  
+ - Creating the DB for monolog at DB creation.  
+  
+#### [eisen engine](https://github.com/eisen-dev/eisen_engine)  
+ - Fixed bug on adding recipe  
+ - Added recipe example for testing  
+    
