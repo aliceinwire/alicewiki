@@ -1,8 +1,9 @@
 This week was a also enough busy, studying for exams.   
 Anyway now i have a bit of freetime and I'm going on developing eisen.  
 
-As now I'm trying to make the init file for autostart eisen front and eisen engine using supervisor and making translation in English and Japanese for gettext.
-
+As now I'm trying to make the init file for autostart eisen front and eisen engine using supervisor and making translation in English and Japanese for gettext.  
+<img src="https://raw.githubusercontent.com/eisen-dev/eisen_docs/master/images/screenshot-localhost%209001%202016-03-14%2004-01-38.png" width="600"/>   
+  
 The news of this week are:  
 ####  [eisen website](http://eisen-dev.github.io/) 
  - Added screenshots and Dynamic language switcher 
