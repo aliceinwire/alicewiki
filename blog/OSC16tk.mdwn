@@ -3,4 +3,4 @@ Get yours at "オープンソースカンファレンス2016 Tokyo/Spring" Eisen
 #eisen   
 #osc16tk   
   
-![](https://pbs.twimg.com/media/CbwlvIfUcAELgc0.jpg)
+<img src="https://pbs.twimg.com/media/CbwlvIfUcAELgc0.jpg" width="600"/>  
