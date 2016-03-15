@@ -11,7 +11,7 @@ or send message to twitter:
 If I have bandwith I will anyway try to replay to issue question :D  
   
 in the mean time please enjoy some screenshot:  
-![](https://pbs.twimg.com/media/CbwbBtdUkAAaefB.png)
-![](https://pbs.twimg.com/media/CbwbBocUkAA9NPK.png)
-![](https://pbs.twimg.com/media/CbwbBtYVAAEXXN7.png)
-![](https://pbs.twimg.com/media/CbwbBqIUMAA2ZZ_.png)
+<img src="https://pbs.twimg.com/media/CbwbBtdUkAAaefB.png" width="600"/>  
+<img src="https://pbs.twimg.com/media/CbwbBocUkAA9NPK.png" width="600"/>  
+<img src="https://pbs.twimg.com/media/CbwbBtYVAAEXXN7.png" width="600"/>  
+<img src="https://pbs.twimg.com/media/CbwbBqIUMAA2ZZ_.png" width="600"/>  
