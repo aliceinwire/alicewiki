@@ -1,0 +1,11 @@
+[Don't commit generated files](https://homes.cs.washington.edu/~mernst/advice/version-control.html)  
+Today I started from css, at first we introduced it with the generated files, but now that we are using vagrant for developing such files are not needed and dosen't have to be maintained under a revision system as best practice.  
+instead the vagrantfile now is containing a simple    
+[[!format  shell """
+echo -e "\n--- Updating css ---\n"
+gem install compass
+cd /vagrant/webd
+compass compile
+"""]]
+
+
