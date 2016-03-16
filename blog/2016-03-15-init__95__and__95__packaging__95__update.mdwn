@@ -7,5 +7,18 @@ echo -e "\n--- Updating css ---\n"
 gem install compass  
 cd /vagrant/webd  
 compass compile  
-"""]]
+"""]]  
+  
+After finishing to autocreate the css file i moved to make the init service.  
+At first like I said in the previous post i thought to use supervisor, but i got into a problem, supervisor is requiring to specify the enviroment variable,
+and celery+ansible was claming about such call. giving a "muxserver_listen bind(): Operation not permitted" error.  
+  
+so i used instead LSB-init and all started to work.  
+you can see all the file [here](https://github.com/eisen-dev/eisen_engine/tree/master/init)   
+  
+Because of this, I'm starting to make actual releasing box using  
+  vagrant package --output eisen.box  
+  
+And if I'm not too late happy pi day #piday  from eisen  
 
+<img src="https://raw.githubusercontent.com/eisen-dev/eisen_docs/master/images/happypiday.png" width="600"/>  
