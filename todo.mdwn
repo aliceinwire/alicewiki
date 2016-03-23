@@ -1,6 +1,7 @@
 My infinite Todo list:
 
-* Improving C
-* Reading Kernel Book
-* Make genkernel patch
-* Study Japanese
+* study more mathematics.
+* get level 1 of japanese language.
+* get more than GPA of 3.5 at university.
+* maintain eisen.
+
