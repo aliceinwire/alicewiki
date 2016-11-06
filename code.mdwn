@@ -4,7 +4,6 @@ repositories using the git protocol:
 
     git://git.aliceinwire.net/git/repo-name.git
 
-    Source control for my [Debian](http://www.debian.org/) packages is
-    found on [git.debian.org](http://git.debian.org/), generally under the
-    _collab-maint_ namespace.
+    Source control for my [Gentoo](http://www.gentoo.org/) packages is
+    found on [github.com/gentoo/gentoo](https://github.com/gentoo/gentoo).
 
