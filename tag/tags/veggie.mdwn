@@ -1,0 +1,4 @@
+[[!meta title="pages tagged veggie"]]
+
+[[!inline pages="tagged(tags/veggie)" actions="no" archive="yes"
+feedshow=10]]

@@ -1,0 +1,6 @@
+Eisen は Ansible を利用したリモートからのパッケージ・ジョブタスク管理用 ＯＳＳ Ｗｅｂ アプリケーションです。   
+#eisen   
+  
+<img src="https://pbs.twimg.com/media/CbwO09xUsAAAism.jpg" width="600"/>  
+<img src="https://pbs.twimg.com/media/CbwO1qBUYAAYIX3.png" width="600"/>  
+<img src="https://pbs.twimg.com/media/CbwOzBdUAAAB9G_.png" width="600"/>  

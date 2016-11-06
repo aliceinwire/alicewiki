@@ -1,0 +1,13 @@
+Recently i became Gentoo Kernel Project member, maintaining the Gentoo Kernel branch 4.7  
+[[Kernel Project|https://wiki.gentoo.org/wiki/Project:Kernel]]  
+  
+I already made some release.  
+[[gentoo-sources-4.7.6.ebuild|https://archives.gentoo.org/gentoo-kernel/message/c2646a903ef1d5db819ebac0b4351d99]]  
+  
+so you can ping me,  
+if the Gentoo Kernel is not up to date :)  
+  
+Recently we had the Dirty COW (CVE-2016-5195) kernel vulnerability come out,  
+and the Gentoo 4.7 branch update was released after just some couple hours after the kernel patch was release.  
+  
+[[https://twitter.com/aliceinwire/status/789245891274092544]]  

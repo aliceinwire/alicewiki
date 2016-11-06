@@ -1,0 +1,18 @@
+Hello,  
+I come back from a school trip in Gunma,  
+and started to get up with eisen issue,  
+but i will be busy studing until 03月08日 because of a school exam.  
+  
+Eisen fixed issue in this few days (01~04) are manly little issue:  
+[#60](https://github.com/eisen-dev/eisen_front/issues/60) using vagrantfile transpiling typescript to javascript  
+[#62](https://github.com/eisen-dev/eisen_front/issues/62) write on the Eisen Front readme the browser where we tested Eisen  
+
+please be free to try Eisen with also different browser and open a bug request if there is any problem  
+
+If you find any issue with Eisen Front or Eisen Engine,  
+please submit a [bug report](https://github.com/eisen-dev/eisen_docs/issues/new)  
+  
+If you want to contribute,  
+check the contribution section in the [Documentation](https://github.com/eisen-dev/eisen_docs/blob/master/README.md)  
+
+For Eisen Installing information please check the [Documentation](https://github.com/eisen-dev/eisen_docs/blob/master/README.md)  

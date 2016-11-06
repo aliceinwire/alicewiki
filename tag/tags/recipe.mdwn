@@ -1,0 +1,4 @@
+[[!meta title="pages tagged recipe"]]
+
+[[!inline pages="tagged(tags/recipe)" actions="no" archive="yes"
+feedshow=10]]
