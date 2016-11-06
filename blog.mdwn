@@ -2,11 +2,11 @@
 [[!template id=note text="""
 [[!aggregate expirecount=5 name="dents" url="https://twitter.com/aliceinwire"
 feedurl="http://wtf.roflcopter.fr/twitter-rss/user/aliceinwire.xml"]]
-[[!inline pages="internal(./blog/dents/*)" template=microblog show=5 feeds=no]]
+[[!inline pages="internal(./blog/dents/*)" template=microblog show=5 feeds=no]] """]]
 
 
 
 
 
-[[!inline  pages="page(blog/*) and !*/Discussion and !*/local.css" and !tagged(draft)" show="10" rootpage="blog" actions=yes]]
+[[!inline  pages="page(blog/*) and !*/Discussion and !*/local.css and !tagged(draft)" show="10" rootpage="blog" actions=yes]]
 
