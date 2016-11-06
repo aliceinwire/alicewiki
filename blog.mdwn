@@ -8,5 +8,5 @@ feedurl="http://wtf.roflcopter.fr/twitter-rss/user/aliceinwire.xml"]]
 
 
 
-[[!inline  pages="page(blog/*) and !*/Discussion and !*/local.css" show="10" rootpage="blog" actions=yes]]
+[[!inline  pages="page(blog/*) and !*/Discussion and !*/local.css" and !tagged(draft)" show="10" rootpage="blog" actions=yes]]
 
