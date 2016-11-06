@@ -1,0 +1,165 @@
+Gentoo　Study Meeting talking (English Summary):  
+homepage: [[http://gentoo.connpass.com/event/40906/]]  
+Live broadcast: [[https://www.youtube.com/watch?v=j0SzulXKFwI]]  
+
+Introduction:  
+    First Gentoo Study Meeting Tokyo with [[https://www.youtube.com/watch?v=j0SzulXKFwI]]  
+    How to become Gentoo Developer introduction talk.  
+        Developer:  
+            Contributing Ebuild:  
+                - sending Git pull request  
+                - Searching for a Mentor on proxy-maint  
+                - Asking in #gentoo-proxy-maint  
+                - Using [[https://bugs.gentoo.org/]]  
+        Non committer developer:  
+            - Contributing in Gentoo projects, with work that 
+              not need gentoo git repository access.  
+            - Contributing in the wiki (Not with translation also if 
+              translator need the wiki translator permisson)  
+    How to get help in Japanese:  
+        - #gentoo-ja Freenode  
+        - [[http://gentoo.slack.com]] [[http://slackin.aliceinwire.net]]  
+        - [[https://github.com/gentoojp/issues]]  
+        - [[groups.google.com/forum/#!forum/gentoojp]]  
+        - [[http://www.gentoo.jp]]   
+        - Gentoo勉強会 (Gentoo Study Meeting)  
+        - [[https://wiki.gentoo.org/wiki/Handbook:Main_Page/ja]]  
+    Gentoo News update:  
+        Talk about Future EAPI 7 ulm slide  
+            Question: When new EAPI are released?  
+                I think there is not a setted release date for EAPI  
+            New feature  
+                - Runtime-switchable useflag  
+                - eqwarn  
+            Banned  
+                - dohtml  
+                - package.provided in profiles  
+                - DESTTREE and INSDESTTREE  
+    Talk about presence of Gentoo booth at Open Source Conference 
+    2016 Tokyo [[http://www.ospn.jp/osc2016-fall/ ]]:  
+        - Stickers [[http://www.unixstickers.com/stickers/linux_os_distribution_stickers/gentoo-linux-os-badge-sticker]]  
+        ask to fondation:  
+        - Banner  
+            size and format  
+        - Table cover  
+            size and format  
+    Presentation:  
+        Presenter: Matsuu san  
+        Slide: Isucon 6 [[http://isucon.net/]]  
+            - Team tuning speed contest  
+            - This time was tuning speed contest on azure.microsoft.com  
+                Only distribution with company can give sapport on azure.  
+                Debian have a third party company that is supporting azure.  
+                Gentoo also need something similar.  
+            - Is good to do past problem for have more score on isucon.  
+                vagrant is nice to use for the doing previous problem  
+            - Go language, varnish+ESI, mysql  
+            - [[https://github.com/matsuu/kataribe]] access log 
+              analyzer for isucon/tuning  
+            - sshrc[[https://github.com/Russell91/sshrc]] 
+              bring your .bashrc, .vimrc, etc. with you when you ssh.  
+            - Matsu san as been choosen for become staff at the 
+              isucon presentation in the future.  
+        Presenter: @tkshnt  
+        Slide: Report on last update  
+            - let's make Gentoo goods shop for Gentoo-JP  
+                previous OSC item:  
+                    - t-shirt (@matsuu, @naota)  
+                    - stickers (@matsuu)  
+                next item:  
+                    - Gentoo Tenugui (手拭い) [[https://goo.gl/SVeDHQ]]  
+                OSC booth:  
+                    - presentation  
+                    - flyer  
+                Design repository:  
+                    - Github  
+                        - project management  
+                        - simple file upload  
+        Presenter: @d_aki  
+        Slide: my chaotic /etc/portage  
+            - package.use can become chaotic  
+            - /var/lib/portage/world difficult to 
+              remeber when you added something and why  
+            - let's use package.use directory and put file 
+              name about what you are installing  
+            - not what but why you installed the package  
+        Presenter: alicef  
+        Slide: How to contribute on Gentoo Github  
+            - recently Gentoo CVS repository as been converted to Git  
+            - Using the Github mirror is possible to send pull request.  
+            - Good point of pull request:  
+                - Code comment and review from more than one developer  
+                - fast way to send ebuild patch upstream  
+                - QA automatic check   
+            - Bad point of pull request:  
+                - the review are open to see to everyone  
+                - basic git knowledge is needed  
+            When we clone Gentoo repository:   
+                Use git clone --depth=50   
+                for fast pull request with less log information  
+                git clone and git clone --depth=50 time difference:  
+                    [[http://paste.ubuntu.com/23259104/]]  
+        Presenter: @usaturn  
+        Slide: systemd-nspawn & btrfs  
+            - On Gentoo using systemd-nspawn  
+            btrfs:   
+                - copy on write  
+                - using subvolume we can make snapshot  
+                - compress is possible  
+                - cannot make swapfile  
+            Systemd:   
+                - unit is the process file manager  
+                - using systemd stage 3 is simple to install  
+                - not using syslog but journald  
+                - network setting by networkd  
+                - instead of cron there is timer  
+                - instead of ntp there is systemd-timesyncd  
+                - grub is not needed, instead systemd-boot 
+                  (ex gummi boot) work as bootloader  
+                - docker is not needed, instead systemd-nspawn 
+                  using machinectl command (good for testing gentoo package)  
+        Presenter: @naota344  
+        Slide: automatically resolving conflict   
+            Gentoo developer, btrfs, linux kernel, emacs, T-code  
+            portage:  
+                resolving conflict  
+                    - when USE flag is needed it will ask to 
+                      add a USE flag.  
+                    - when circulation dependency is detected it will 
+                      ask to remove a USE flag, for example  
+                Why there is a conflict:  
+                    - Before installing a new package, we 
+                      have a package (for example perl-5.20) with all 
+                      the the dependency package setted  
+                    - when we are goin to update world and we get a 
+                      new package update (for example perl-5.22),
+                       also some dependency of perl-5.22 get new update  
+                    - in this situation can happen that some dependency
+                      linked 
+                      to perl-5.20 get in conflict with perl-5.22  
+                How can we fix such situation:  
+                    - we have a option to add --reinstall-atoms="Y"
+                      to emerge command (Y= name of the dependency
+                      package that is causing problem)  
+                    - this command will instead of just update the
+                      package it will reinstall the package as if 
+                      they are not installed, solving such dependency
+                      problem.  
+                Why package is anyway deciding to automatically 
+                not fixing dependency  
+                    maybe because trying to fix all the dependecy will not
+                    work correctly  
+                When portage have conflict for many package  
+                    it became more complicated and we will have a command
+                    similar to this:  
+                    --reinstall-atoms="A B C D E F G H I L M N ..."  
+                For solving such problem there is emerge --reinstall-atoms
+                wrapper  
+                    [[https://github.com/naota/emerge-wrapper]]  
+                    - automatically fixing circle dependecy  
+                    - showing dependency graph  
+                    - there is also a function for make try the 
+                      dependency graph in a container  
+                    - emerge analyzer tool  
+
+[[!tag tags/gentoo tags/gentoo_meeting tags/monthly]]
