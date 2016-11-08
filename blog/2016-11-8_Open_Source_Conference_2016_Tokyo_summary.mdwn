@@ -1,5 +1,30 @@
-[Open Source Conference 2016 Tokyo](http://www.ospn.jp/osc2016-fall/)   
-<img src="RrI6c6W2.jpg" width="600"/>  
+[Open Source Conference 2016 Tokyo](http://www.ospn.jp/osc2016-fall/)  
+    
+Many people come to the Gentoo booth,  
+manly students wanting to get in a   
+Operating System adventure and asking  
+information.  
+  
+We could give away around 200 flyer in two  
+days, and many many stickers.  
+  
+We had also in exposition some esoteric  
+enviroment like the [IS01 sharp](http://www.pulster.de/info/sharp/is01/sharp-is01-faq.htm)   
+off course mounting Gentoo as Native and   
+as prefix.   
+Of course one of the first things we tried  
+was the 5 minutes long Gentoo sl command.
+
+<img src="https://pbs.twimg.com/media/CwVJC21UUAELYvu.jpg" width="500"/>  
+<img src="https://pbs.twimg.com/media/CwVJESXUcAADuaW.jpg" width="500"/>  
+image from: [@NTSC_J](https://twitter.com/NTSC_J)
+  
+  
+We see a SailfishOS and I discovered  
+that [SailfishOS porting](https://fureidofort.blogspot.jp/2013/12/nemo-apps-on-sailfishos-emulator.html)  cannot use  
+android application.  
+
+<img src="RrI6c6W2.jpg" width="500"/>  
 
 
 
