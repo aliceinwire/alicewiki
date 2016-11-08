@@ -1,0 +1,4 @@
+[[!meta title="pages tagged tags/draft"]]
+
+[[!inline pages="tagged(tags/draft)" actions="no" archive="yes"
+feedshow=10]]
