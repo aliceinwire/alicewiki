@@ -4,4 +4,4 @@ test
 
 
 
-[[!tag tags/gentoo tags/gentoo_meeting tags/monthly tags/draft ]]
+[[!tag tags/gentoo tags/gentoo_meeting tags/monthly draft ]]
