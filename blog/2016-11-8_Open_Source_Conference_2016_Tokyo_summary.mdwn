@@ -1,6 +1,6 @@
 [Open Source Conference 2016 Tokyo](http://www.ospn.jp/osc2016-fall/)  
     
-Many people come to the Gentoo booth,  
+Many people came to the Gentoo booth,  
 manly students wanting to get in a   
 Operating System adventure and asking  
 information.  
