@@ -11,7 +11,7 @@ days, and many many stickers.
    
   
 We had also in exposition some esoteric  
-enviroment like the [IS01 sharp](http://www.pulster.de/info/sharp/is01/sharp-is01-faq.htm)   
+enviroment like the [IS01 sharp](http://www.pulster.de/info/sharp/is01/sharp-is01-faq.htm),   
 off course mounting Gentoo as Native and   
 as prefix.   
 Of course one of the first things we tried  
