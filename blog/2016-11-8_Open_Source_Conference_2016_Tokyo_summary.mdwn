@@ -33,9 +33,9 @@ android application.
 <img src="http://aliceinwire.net/blog/2016-11-8_Open_Source_Conference_2016_Tokyo_summary/RrI6c6W2.jpg" width="500"/>  
 
 It was an amazing event and I would   
-like to take a moment for thanks  
-everyone that came to the Gentoo booth    
-and that made possible making the Gentoo booth.  
+like to thanks everyone that came to  
+the Gentoo booth and everyone that helped  
+in making the Gentoo booth.  
 
 
 [[!tag tags/gentoo tags/gentoo_meeting tags/monthly draft ]]
