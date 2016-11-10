@@ -1,7 +1,7 @@
 [Open Source Conference 2016 Tokyo](http://www.ospn.jp/osc2016-fall/)  
     
 Many people came to the Gentoo booth,  
-mainly students and Open Source users
+mainly students and Open Source users  
 asking for Gentoo information.  
   
 We could give away around 200 flyer in two  
