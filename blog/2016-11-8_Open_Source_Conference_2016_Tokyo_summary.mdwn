@@ -35,7 +35,7 @@ android application.
 It was an amazing event and I would   
 like to thanks everyone that came to  
 the Gentoo booth and everyone that helped  
-in making the Gentoo booth.  
+making the Gentoo booth.  
 
 
 [[!tag tags/gentoo tags/gentoo_meeting tags/monthly draft ]]
