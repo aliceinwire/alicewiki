@@ -37,4 +37,4 @@ making the Gentoo booth and all the
 amazing Gentoo community.  
 
 
-[[!tag tags/gentoo tags/gentoo_meeting tags/monthly draft ]]
+[[!tag tags/gentoo tags/gentoo_meeting tags/monthly ]]
