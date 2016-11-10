@@ -26,7 +26,7 @@ was the 5 minutes long Gentoo sl command.
 image from: [@NTSC_J](https://twitter.com/NTSC_J) 
   
 We also had a Gentoo notebook  
-running wayland.
+running wayland (the one in the middle).
 
 <img src="http://aliceinwire.net/blog/2016-11-8_Open_Source_Conference_2016_Tokyo_summary/RrI6c6W2.jpg" width="500"/>  
 
