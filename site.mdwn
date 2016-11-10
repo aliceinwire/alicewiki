@@ -1,0 +1,7 @@
+* [[supervisord|http://aliceinwire.net:9001/]]
+* [[irc|https://aliceinwire.net:33313/]]
+* [[git|http://git.aliceinwire.net/]]
+* [[cloud|http://cloud.aliceinwire.net/]]
+* [[wiki|http://doku.aliceinwire.net/]]
+TODO:
+mail service
