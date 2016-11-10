@@ -23,12 +23,10 @@ was the 5 minutes long Gentoo sl command.
 
 <img src="https://pbs.twimg.com/media/CwVJC21UUAELYvu.jpg" width="500"/>  
 <img src="https://pbs.twimg.com/media/CwVJESXUcAADuaW.jpg" width="500"/>  
-image from: [@NTSC_J](https://twitter.com/NTSC_J)
+image from: [@NTSC_J](https://twitter.com/NTSC_J) 
   
-  
-We see a SailfishOS and I discovered  
-that [SailfishOS porting](https://fureidofort.blogspot.jp/2013/12/nemo-apps-on-sailfishos-emulator.html)  cannot use  
-android application.  
+We also had a Gentoo notebook  
+running wayland.
 
 <img src="http://aliceinwire.net/blog/2016-11-8_Open_Source_Conference_2016_Tokyo_summary/RrI6c6W2.jpg" width="500"/>  
 
