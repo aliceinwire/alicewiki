@@ -1,8 +1,6 @@
 [[!meta title="Alice Ferrazzi in wired"]]
 
-Now the server is moved to Japan !
-
-Alice ferrazzi is updating this wiki...
+Alice ferrazzi is compiling this wiki...
 -
 アリス フェラッツィがこのウィキを更新しています。
 -
@@ -15,9 +13,9 @@ Eisenについて何か仕事があれば[メール](mailto:alice.ferrazzi+eisen
 Things here:
 
 * [[contact]] info
-* a [[blog]]
+* a [[blog]] and a [Gentoo-blog](https://blogs.gentoo.org/alicef/)
+* [Gentoo activity](https://wiki.gentoo.org/wiki/User:Aliceinwire)
 * [[code]] she has written
-* a [[todo]] list (because i'm working in so many project and usually i forgot what i have to do!)
 * [[elsewhere]] on the web (other web stuff)
 * a [[resume on linkedin|https://linkedin.com/in/aliceinwire]]
 * a [[SandBox]], because wikis are supposed to have them
