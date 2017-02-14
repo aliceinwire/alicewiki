@@ -1,5 +1,7 @@
 [[!meta title="Alice Ferrazzi in wired"]]
 
+[Gentoo Kernel Project Leader](https://wiki.gentoo.org/wiki/Project:Kernel)
+
 Alice ferrazzi is compiling this wiki...
 -
 アリス フェラッツィがこのウィキを更新しています。
