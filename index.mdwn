@@ -8,8 +8,7 @@ Alice ferrazzi is compiling this wiki...
 -
 ![aliceinwire!](/data/aliceinwire.png)
 
-[Eisen](http://eisen-dev.github.io/eisen/)のコンサルティングの仕事をリモートでする事ができます。  
-Eisenについて何か仕事があれば[メール](mailto:alice.ferrazzi+eisen-consulting@gmail.com)ください。
+[メール](mailto:alice.ferrazzi@gmail.com)
 
 
 Things here:
