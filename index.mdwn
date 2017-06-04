@@ -6,7 +6,8 @@ Alice ferrazzi is compiling this wiki...
 -
 アリス フェラッツィがこのウィキを更新しています。
 -
-![aliceinwire!](/data/aliceinwire.png)
+<img src="http://aliceinwire.net/alice.jpg" width="400"/>  
+
 
 [メール](mailto:alice.ferrazzi@gmail.com)
 
