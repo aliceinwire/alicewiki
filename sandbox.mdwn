@@ -43,4 +43,11 @@ void main () {
 }
 """]]
 
+
+[[!pygments  c """
+void main () {
+    printf("hello, world!");
+}
+"""]]
+
 [[ikiwiki/WikiLink]]
