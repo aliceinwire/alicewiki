@@ -1,0 +1,29 @@
+Kernel-2.eclass recently adopted EAPI 6  <br>
+Let's move all kernel ebuild packages to EAPI 6  <br>
+  <br>
+If you are wondering what is change with EAPI 6, there are some nice reference:  <br>
+  <br>
+<a href="https://blogs.gentoo.org/mgorny/2015/11/13/the-ultimate-guide-to-eapi-6/">https://blogs.gentoo.org/mgorny/2015/11/13/the-ultimate-guide-to-eapi-6/</a>  <br>
+  <br>
+and from the official documentation <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html">https://dev.gentoo.org/~ulm/pms/head/pms.html</a>:<br>
+<br>
+EAPI 6 is EAPI 5 with the following changes:<br>
+<ul>
+ 	<li class="compactitem">Bash version is 4.2, <span class="eccc1000-"><span class="small-caps">bash-version</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-640006">78</a>.</li>
+ 	<li class="compactitem">Default <span class="ectt-1000">src_prepare </span>no longer a no-op, <span class="eccc1000-"><span class="small-caps">src-prepare-6</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-1010009.1.5">138</a>.</li>
+ 	<li class="compactitem">Different <span class="ectt-1000">src_install </span>implementation, <span class="eccc1000-"><span class="small-caps">src-install-6</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-1050009.1.9">174</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">LC_CTYPE </span>and <span class="ectt-1000">LC_COLLATE </span>compatible with POSIX locale, <span class="eccc1000-"><span class="small-caps">locale-settings</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-12000011.1">215</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">failglob </span>is enabled in global scope, <span class="eccc1000-"><span class="small-caps">failglob</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-12900011.3.1.2">226</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">einstall </span>banned, <span class="eccc1000-"><span class="small-caps">banned-commands</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-13300011.3.3.2">233</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">die </span>and <span class="ectt-1000">assert </span>called with <span class="ectt-1000">-n </span>respect <span class="ectt-1000">nonfatal</span>, <span class="eccc1000-"><span class="small-caps">nonfatal-die</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-13700011.3.3.6">237</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">eapply </span>support, <span class="eccc1000-"><span class="small-caps">eapply</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-13800011.3.3.7">240</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">eapply_user </span>support, <span class="eccc1000-"><span class="small-caps">eapply-user</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-13800011.3.3.7">240</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">econf </span>adds <span class="ectt-1000">--docdir </span>and <span class="ectt-1000">--htmldir</span>, <span class="eccc1000-"><span class="small-caps">econf-options</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-13900011.3.3.8">246</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">in_iuse </span>support, <span class="eccc1000-"><span class="small-caps">in-iuse</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-14300011.3.3.12">275</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">unpack </span>supports absolute and relative paths, <span class="eccc1000-"><span class="small-caps">unpack-absolute</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-14500011.3.3.14">284</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">unpack </span>supports <span class="ectt-1000">.txz</span>, <span class="eccc1000-"><span class="small-caps">unpack-extensions</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-14500011.3.3.14">285</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">unpack </span>matches filename extensions case-insensitively, <span class="eccc1000-"><span class="small-caps">unpack-ignore-case</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-14500011.3.3.14">285</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">einstalldocs </span>support, <span class="eccc1000-"><span class="small-caps">einstalldocs</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-14500011.3.3.14">286</a>.</li>
+ 	<li class="compactitem"><span class="ectt-1000">get_libdir </span>support, <span class="eccc1000-"><span class="small-caps">get-libdir</span> </span>on page <a href="https://dev.gentoo.org/~ulm/pms/head/pms.html#x1-14500011.3.3.14">286</a>.</li>
+</ul>
+&nbsp;
