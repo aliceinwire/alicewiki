@@ -37,14 +37,7 @@ print "Hello, ${a}\n";
 """]]
 
 
-[[!format  c """
-void main () {
-    printf("hello, world!");
-}
-"""]]
-
-
-[[!pygments content="""
+[[!pygments c content="""
 void main () {
     printf("hello, world!");
 }
