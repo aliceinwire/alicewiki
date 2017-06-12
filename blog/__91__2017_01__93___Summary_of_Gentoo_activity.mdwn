@@ -1,0 +1,10 @@
+ - Intel Edison Gentoo wiki page and Gentoo base images [User:Aliceinwire/Gentoo_Edison](https://wiki.gentoo.org/wiki/User:Aliceinwire/Gentoo_Edison)
+ - Wrote [OpenStack](https://wiki.gentoo.org/wiki/Openstack) page
+ - Joined Gentoo infra project
+ - Started to make Gentoo sources Kernel-CI
+ - Gentoo Kernel leader
+ - bumped dev-util/idea-ultimate
+ - bumped ikiwiki
+ - bumped kernel
+ - kernel-2.eclass for EAPI6
+ - stabilize gentoo-sources-4.9.6
