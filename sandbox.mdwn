@@ -44,7 +44,7 @@ void main () {
 """]]
 
 
-[[!pygments  c """
+[[!pygments  language="fortran" content="""
 void main () {
     printf("hello, world!");
 }
