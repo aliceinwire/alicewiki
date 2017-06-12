@@ -29,11 +29,11 @@ Bulleted list
 * *item*
 * item
 
-   [[!syntax  type="perl" text="""  
-   #!/usr/bin/perl
+[[!syntax  type="perl" text="""  
+#!/usr/bin/perl
 
-   my $a = "World";
-   print "Hello, ${a}\n";
-   """]]
+my $a = "World";
+print "Hello, ${a}\n";
+"""]]
 
 [[ikiwiki/WikiLink]]
