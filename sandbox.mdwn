@@ -36,4 +36,11 @@ my $a = "World";
 print "Hello, ${a}\n";
 """]]
 
+
+[[!format  c """
+void main () {
+    printf("hello, world!");
+}
+"""]]
+
 [[ikiwiki/WikiLink]]
