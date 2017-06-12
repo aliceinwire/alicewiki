@@ -29,7 +29,10 @@ Bulleted list
 * *item*
 * item
 
-[[!listdirectives  generated]]
-
+[[!format  c """
+void main () {
+    printf("hello, world!");
+}
+"""]]
 
 [[ikiwiki/WikiLink]]
