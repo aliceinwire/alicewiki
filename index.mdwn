@@ -1,11 +1,12 @@
 [[!meta title="Alice Ferrazzi in wired"]]
 
-[Gentoo Kernel Project Leader](https://wiki.gentoo.org/wiki/Project:Kernel)
-
 Alice ferrazzi is compiling this wiki...
 -
-アリス フェラッツィがこのウィキを更新しています。
+アリス フェラッツィがこのウィキをコンパイルしています。
 -
+
+[Gentoo Kernel Project Leader](https://wiki.gentoo.org/wiki/Project:Kernel)
+
 <img src="http://aliceinwire.net/alice_2.jpg" width="400"/>  
 
 
@@ -15,7 +16,7 @@ Alice ferrazzi is compiling this wiki...
 Things here:
 
 * [[contact]] info
-* a [[blog]] and a [Gentoo-blog](https://blogs.gentoo.org/alicef/)
+* a [[blog]]
 * [Gentoo activity](https://wiki.gentoo.org/wiki/User:Aliceinwire)
 * this wiki [[code]]
 * [Github Code](https://github.com/aliceinwire/) she as written
