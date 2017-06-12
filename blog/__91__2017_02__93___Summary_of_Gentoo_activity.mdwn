@@ -1,0 +1,6 @@
+* released gentoo-sources-4.9.9
+* made kernel bugs list on bugzilla [kernel-only](https://bugs.gentoo.org/buglist.cgi?cmdtype=runnamed&namedcmd=kernel-only) [kernel-closed](https://bugs.gentoo.org/buglist.cgi?cmdtype=runnamed&namedcmd=kernel-closed)
+* Building [Gentoo Kernel CI](https://wiki.gentoo.org/wiki/User:Aliceinwire/Kernel_CI) for use less time packaging kernel, and work more on Gentoo kernel patch
+* made [Gentoo Google Summer of Code 2017](https://wiki.gentoo.org/wiki/Google_Summer_of_Code/2017) page
+* posted kernel-2.eclass eapi-6 patch on gentoo-dev
+* added [kernel live check](https://wiki.gentoo.org/wiki/Google_Summer_of_Code/2017/Ideas/kernel_live_check ) idea to Gsoc gentoo 2017 page
