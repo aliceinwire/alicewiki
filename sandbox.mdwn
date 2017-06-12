@@ -29,13 +29,6 @@ Bulleted list
 * *item*
 * item
 
-[[!syntax  type="perl" text="""  
-#!/usr/bin/perl
-
-my $a = "World";
-print "Hello, ${a}\n";
-"""]]
-
 
 [[!pygments c content="""
 #include <stdio.h>
