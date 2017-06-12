@@ -29,10 +29,11 @@ Bulleted list
 * *item*
 * item
 
-[[!format  c """
-void main () {
-    printf("hello, world!");
-}
-"""]]
+   [[!syntax  type="perl" text="""  
+   #!/usr/bin/perl
+
+   my $a = "World";
+   print "Hello, ${a}\n";
+   """]]
 
 [[ikiwiki/WikiLink]]
