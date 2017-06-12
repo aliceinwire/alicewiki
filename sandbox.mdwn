@@ -44,7 +44,7 @@ void main () {
 """]]
 
 
-[[!pygments language="c" content="""
+[[!pygments content="""
 void main () {
     printf("hello, world!");
 }
