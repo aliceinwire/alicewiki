@@ -38,8 +38,11 @@ print "Hello, ${a}\n";
 
 
 [[!pygments c content="""
-void main () {
-    printf("hello, world!");
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	return 0;
 }
 """]]
 
