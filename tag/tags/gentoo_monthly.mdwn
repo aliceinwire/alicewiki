@@ -1,0 +1,4 @@
+[[!meta title="pages tagged tags/gentoo monthly"]]
+
+[[!inline pages="tagged(tags/gentoo_monthly)" actions="no" archive="yes"
+feedshow=10]]
