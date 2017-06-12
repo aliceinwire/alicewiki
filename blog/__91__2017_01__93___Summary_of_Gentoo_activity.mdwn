@@ -8,3 +8,5 @@
  - bumped kernel
  - kernel-2.eclass for EAPI6
  - stabilize gentoo-sources-4.9.6
+
+[[!tag tags/gentoo tags/gentoo_monthly tags/monthly ]]
