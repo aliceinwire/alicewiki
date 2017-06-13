@@ -6,7 +6,8 @@ And wordpress maintenance takes lots of time, in particular managing plugins.
 Also because I cannot change Gentoo blog plugins without admin privilege, 
 is bit too much to have to ask every time I have problem with plugins.
 
-So I decided to come back to ikiwiki, also in ikiwiki I can make some sort of draft function where post tagged as draft dosen't come up on the blog list.   
+So I decided to come back to ikiwiki.
+Also in ikiwiki I can make some sort of draft function where post tagged as draft dosen't come up on the blog list.   
 This is simply done by using this on the blog.mdwn  
 pages="page(blog/*) and !*/Discussion and !*/local.css and !tagged(draft)"  
 That will remove the blog page tagged with draft from the blog view.  
