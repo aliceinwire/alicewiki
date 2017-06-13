@@ -1,0 +1,4 @@
+* Searching work as researcher in Japan
+* Got instances for Gentoo Kernel CI
+* Joined Gentoo Kernel Security Project
+* Released kernel 4.11
