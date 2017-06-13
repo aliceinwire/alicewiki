@@ -1,0 +1,5 @@
+* Searching work as researcher in Japan
+* Applayed to Open Source Summit Japan 2017
+* [OSC Gentoo booth Tokyo/Spring](https://www.ospn.jp/osc2017-spring/)
+* [OSC Tokyo/Spring Gentoo presentation](https://www.ospn.jp/osc2017-spring/modules/eguide/event.php?eid=45)
+* Investigating SPI for Gentoo
