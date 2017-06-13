@@ -1,4 +1,4 @@
-I was trying to use blogs.gentoo.org/alicef/ Gentoo official blog  
+I was trying to use [blogs.gentoo.org/alicef/](http://blogs.gentoo.org/alicef/) Gentoo official blog  
 based on wordpress.   
 As far as I could like the draft feature, it had some big drawback.  
 Most big one I couldn't post any syntax highlighted code.   
