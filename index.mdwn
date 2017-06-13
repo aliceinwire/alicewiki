@@ -22,4 +22,4 @@ Things here:
 * a [[SandBox]], because wikis are supposed to have them  
 
 This server is powered by:  
-[[!img gentoo-badge.png size="" alt=""]]
+[[!img gentoo-badge.png size="" alt="" link="https://www.gentoo.org"]]
