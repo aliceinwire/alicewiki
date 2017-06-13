@@ -2,7 +2,9 @@ I was trying to use [blogs.gentoo.org/alicef/](http://blogs.gentoo.org/alicef/) 
 based on wordpress.   
 As far as I could like the draft feature, it had some big drawback.  
 Most big one I couldn't post any syntax highlighted code.   
-And wordpress maintenance takes lots of time, in particular managing plugins.
+And wordpress maintenance takes lots of time, in particular managing plugins.  
+Also because I cannot change Gentoo blog plugins without admin privilege, 
+is bit too much to have to ask every time I have problem with plugins.
 
 So I decided to come back to ikiwiki, also in ikiwiki I can make some sort of draft function where post tagged as draft dosen't come up on the blog list.   
 This is simply done by using this on the blog.mdwn  
