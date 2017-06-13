@@ -8,12 +8,9 @@ Alice ferrazzi is compiling this wiki...
 [Gentoo Kernel Project Leader](https://wiki.gentoo.org/wiki/Project:Kernel)
 
 <img src="http://aliceinwire.net/image/alice.jpg" width="400"/>  
+  
 
-
-[メール](mailto:alice.ferrazzi@gmail.com)
-
-
-Things here:
+Things here:  
 
 * [[contact]] info
 * a [[blog]]
