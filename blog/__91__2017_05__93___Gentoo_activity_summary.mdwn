@@ -1,0 +1,9 @@
+* __Still searching work as researcher in Tokyo,Japan__
+* Deployed [Gentoo Kernel CI wiki page](https://wiki.gentoo.org/wiki/User:Aliceinwire/Kernel_CI) 
+* [Gentoo Kernel CI](http://kernel1.amd64.dev.gentoo.org:8010/)
+* Accepted for Gentoo Gsoc 2017 "[kernel live patch - automatically check and live patching the Kernel](https://summerofcode.withgoogle.com/projects/#5184159881363456 )"
+* Working on Gentoo kernel CI
+* Got accepted for Open Source Summit Japan as speaker 
+ * "Fast Releasing and Testing of Gentoo Kernel Packages and Future Plans of the Gentoo Kernel Project - Alice Ferrazzi, Gentoo Kernel Project"
+ * "Keynote: Linux Kernel Panel - Moderated by Alice Ferrazzi, Gentoo Kernel Project Leader"
+ * [https://ossjapan2017.sched.com/speaker/aliceferrazzi](https://ossjapan2017.sched.com/speaker/aliceferrazzi)
