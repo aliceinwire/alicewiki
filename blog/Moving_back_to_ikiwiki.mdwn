@@ -11,7 +11,17 @@ That will remove the blog page tagged with draft from the blog view.
   
 For the syntax highlight I used a plugin for pygments.py made by  
  [tylercipriani.com](http://tylercipriani.com)  
-That you can find here [pygments.pm](https://github.com/thcipriani/dotfiles/blob/deef49f1b6a65d1d45071eade67c1f396eb70efd/ikiwiki/IkiWiki/Plugin/pygments.pm)
+That you can find here [pygments.pm](https://github.com/thcipriani/dotfiles/blob/deef49f1b6a65d1d45071eade67c1f396eb70efd/ikiwiki/IkiWiki/Plugin/pygments.pm)  
+
+Like this:
+[[!pygments c content="""
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	return 0;
+}
+"""]]
 
 And last one, on Ikiwiki comments, I decided to delegate comments spam to disqus, also if I don't like so much to use a private business plugin, do is job of managing comments well enough.  
 I also just discovered that disqus is part of Y combinator, the company behind hacker news.  
