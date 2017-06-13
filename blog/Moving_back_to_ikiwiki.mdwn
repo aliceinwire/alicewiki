@@ -17,4 +17,4 @@ And last one, on Ikiwiki comments, I decided to delegate comments spam to disqus
 I also just discovered that disqus is part of Y combinator, the company behind hacker news.  
 
 
-[[!tag tags/draft ]]
+[[!tag draft ]]
