@@ -19,5 +19,7 @@ Things here:
 * [Github Code](https://github.com/aliceinwire/) she as written
 * [[elsewhere]] on the web (other web stuff)
 * a [[resume on linkedin|https://linkedin.com/in/aliceinwire]]
-* a [[SandBox]], because wikis are supposed to have them
- 
+* a [[SandBox]], because wikis are supposed to have them  
+
+This server is powered by:  
+[[!img gentoo-badge.png size="" alt=""]]
