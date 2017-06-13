@@ -1,0 +1,20 @@
+I was trying to use blogs.gentoo.org/alicef/ Gentoo official blog  
+based on wordpress.   
+As far as I could like the draft feature, it had some big drawback.  
+Most big one I couldn't post any syntax highlighted code.   
+And wordpress maintenance takes lots of time, in particular managing plugins.
+
+So I decided to come back to ikiwiki, also in ikiwiki I can make some sort of draft function where post tagged as draft dosen't come up on the blog list.   
+This is simply done by using this on the blog.mdwn  
+pages="page(blog/*) and !*/Discussion and !*/local.css and !tagged(draft)"  
+That will remove the blog page tagged with draft from the blog view.  
+  
+For the syntax highlight I used a plugin for pygments.py made by  
+ [tylercipriani.com](http://tylercipriani.com)  
+That you can find here [pygments.pm](https://github.com/thcipriani/dotfiles/blob/deef49f1b6a65d1d45071eade67c1f396eb70efd/ikiwiki/IkiWiki/Plugin/pygments.pm)
+
+And last one, on Ikiwiki comments, I decided to delegate comments spam to disqus, also if I don't like so much to use a private business plugin, do is job of managing comments well enough.  
+I also just discovered that disqus is part of Y combinator, the company behind hacker news.  
+
+
+[[!tag tags/draft ]]
