@@ -7,3 +7,5 @@
  * "Fast Releasing and Testing of Gentoo Kernel Packages and Future Plans of the Gentoo Kernel Project - Alice Ferrazzi, Gentoo Kernel Project"
  * "Keynote: Linux Kernel Panel - Moderated by Alice Ferrazzi, Gentoo Kernel Project Leader"
  * [https://ossjapan2017.sched.com/speaker/aliceferrazzi](https://ossjapan2017.sched.com/speaker/aliceferrazzi)
+
+[[!tag tags/gentoo tags/gentoo_monthly tags/monthly ]]
