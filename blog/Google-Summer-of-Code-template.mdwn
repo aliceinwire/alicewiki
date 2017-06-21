@@ -1,0 +1,15 @@
+___Google Summer of Code day 00___
+
+`What was my plan for today?`  
+
+example
+
+`What i did today?`  
+
+example
+
+`what i will do next time?`  
+
+* example  
+
+[[!tag draft ]]
