@@ -57,4 +57,4 @@ we need also to send the patch file.
 - Make the livepatch call more flexible (as now is hardcoded)
 - Ask infra for a server where to install elivepatch sever
 
-[[!tag draft]]
+[[!tag tags/gentoo tags/GSoC-2017 ]]
