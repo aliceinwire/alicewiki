@@ -1,4 +1,4 @@
-__GSoC day 15__
+___Google Summer of Code day 15___
 
 `What was my plan for today?`  
 working on sending the configuration file on RESTful api,  
