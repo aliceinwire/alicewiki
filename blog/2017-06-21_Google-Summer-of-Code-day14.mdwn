@@ -5,7 +5,7 @@ working on sending the configuration file on RESTful api,
 and starting to work on making the patch.ko file in the server.  
 
 `What i did today?`  
-using wekzeug.datastructures.FileStorage in elivepatch_server,   
+using [wekzeug.datastructures.FileStorage](http://werkzeug.pocoo.org/docs/0.12/datastructures/#werkzeug.datastructures.FileStorage) in elivepatch_server,   
 I could receive the file from the elivepatch_client POST request  
 using the RESTful API.  
 
@@ -28,8 +28,9 @@ This is the example of using kpatch-build:
 kpatch-build/kpatch-build -s /usr/src/linux-4.9.16-gentoo/ -v /usr/src/linux-4.9.16-gentoo/vmlinux examples/test.patch --skip-gcc-check
 """]]
 
+
 [[!pygments shell content="""
-gsoc-2017 kpatch (gentoo*) # kpatch-build/kpatch-build --help
+gsoc-2017 kpatch (gentoo) # kpatch-build/kpatch-build --help
 usage: kpatch-build [options] <patch file>
             -h, --help         Show this help message
             -r, --sourcerpm    Specify kernel source RPM
@@ -44,11 +45,16 @@ usage: kpatch-build [options] <patch file>
 """]]
 
 
+This command is called automatically by the elivepatch server after receiving the
+configuration file.
+
+we need also to send the patch file.
+
+
+
+`what i will do next time?`
+- Divide call for sending (patch, config) and the call for build the livepatch
+- Make the livepatch call more flexible (as now is hardcoded)
+- Ask infra for a server where to install elivepatch sever
 
 [[!tag draft]]
- 
-
-
-
-_what i will do next time?_
-
