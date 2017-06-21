@@ -1,13 +1,13 @@
 __GSoC day 15__
 
-_What was my plan for today?_
-working on sending the configuration file on RESTful api,
-and starting to work on making the patch.ko file in the server.
+`What was my plan for today?`  
+working on sending the configuration file on RESTful api,  
+and starting to work on making the patch.ko file in the server.  
 
-_What i did today?_
-using wekzeug.datastructures.FileStorage in elivepatch_server, 
-I could receive the file from the elivepatch_client POST request
-using the RESTful API.
+`What i did today?`  
+using wekzeug.datastructures.FileStorage in elivepatch_server,   
+I could receive the file from the elivepatch_client POST request  
+using the RESTful API.  
 
 [[!pygments python content="""
 def post(self):
@@ -16,13 +16,13 @@ def post(self):
 """]]
 
 so as now we can get the kernel configuration file, extract if is .gz filename 
-and send it to the elivepatch server.
+and send it to the elivepatch server.  
+   
+elivepatch server need to read the configuration, compare it with the   
+current kernel configuration and if different recompile the kernel.  
+After we can start making the livepatch with kpatch-build.  
 
-elivepatch server need to read the configuration, compare it with the 
-current kernel configuration and if different recompile the kernel.
-After we can start making the livepatch with kpatch-build.
-
-This is the example of using kpatch-build:
+This is the example of using kpatch-build:  
     kpatch-build/kpatch-build -s /usr/src/linux-4.9.16-gentoo/ -v /usr/src/linux-4.9.16-gentoo/vmlinux examples/test.patch --skip-gcc-check
 
 [[!pygments bash content="""
