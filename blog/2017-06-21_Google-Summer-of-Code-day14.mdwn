@@ -1,0 +1,51 @@
+__GSoC day 15__
+
+_What was my plan for today?_
+	working on sending the configuration file on RESTful api,
+	and starting to work on making the patch.ko file in the server.
+
+_What i did today?_
+    using wekzeug.datastructures.FileStorage in elivepatch_server, 
+    I could receive the file from the elivepatch_client POST request
+    using the RESTful API.
+
+    [[!pygments python content="""
+    def post(self):
+        parse = reqparse.RequestParser()
+        parse.add_argument('file', type=werkzeug.datastructures.FileStorage, location)
+    """]]
+
+    so as now we can get the kernel configuration file, extract if is .gz filename 
+    and send it to the elivepatch server.
+
+    elivepatch server need to read the configuration, compare it with the 
+    current kernel configuration and if different recompile the kernel.
+    After we can start making the livepatch with kpatch-build.
+
+    This is the example of using kpatch-build:
+    kpatch-build/kpatch-build -s /usr/src/linux-4.9.16-gentoo/ -v /usr/src/linux-4.9.16-gentoo/vmlinux examples/test.patch --skip-gcc-check
+
+	[[!pygments bash content="""
+	gsoc-2017 kpatch (gentoo*) # kpatch-build/kpatch-build --help
+	usage: kpatch-build [options] <patch file>
+                -h, --help         Show this help message
+                -r, --sourcerpm    Specify kernel source RPM
+                -s, --sourcedir    Specify kernel source directory
+                -c, --config       Specify kernel config file
+                -v, --vmlinux      Specify original vmlinux
+                -t, --target       Specify custom kernel build targets
+                -d, --debug        Keep scratch files in /tmp
+                --skip-cleanup     Skip post-build cleanup
+                --skip-gcc-check   Skip gcc version matching check
+                                   (not recommended)
+	"""]]
+
+
+
+[[!tag draft]]
+ 
+
+
+
+_what i will do next time?_
+
