@@ -23,21 +23,24 @@ current kernel configuration and if different recompile the kernel.
 After we can start making the livepatch with kpatch-build.  
 
 This is the example of using kpatch-build:  
-    kpatch-build/kpatch-build -s /usr/src/linux-4.9.16-gentoo/ -v /usr/src/linux-4.9.16-gentoo/vmlinux examples/test.patch --skip-gcc-check
 
-[[!pygments bash content="""
-	gsoc-2017 kpatch (gentoo*) # kpatch-build/kpatch-build --help
-	usage: kpatch-build [options] <patch file>
-                -h, --help         Show this help message
-                -r, --sourcerpm    Specify kernel source RPM
-                -s, --sourcedir    Specify kernel source directory
-                -c, --config       Specify kernel config file
-                -v, --vmlinux      Specify original vmlinux
-                -t, --target       Specify custom kernel build targets
-                -d, --debug        Keep scratch files in /tmp
-                --skip-cleanup     Skip post-build cleanup
-                --skip-gcc-check   Skip gcc version matching check
-                                   (not recommended)
+[[!pygments shell content="""
+kpatch-build/kpatch-build -s /usr/src/linux-4.9.16-gentoo/ -v /usr/src/linux-4.9.16-gentoo/vmlinux examples/test.patch --skip-gcc-check
+"""]]
+
+[[!pygments shell content="""
+gsoc-2017 kpatch (gentoo*) # kpatch-build/kpatch-build --help
+usage: kpatch-build [options] <patch file>
+            -h, --help         Show this help message
+            -r, --sourcerpm    Specify kernel source RPM
+            -s, --sourcedir    Specify kernel source directory
+            -c, --config       Specify kernel config file
+            -v, --vmlinux      Specify original vmlinux
+            -t, --target       Specify custom kernel build targets
+            -d, --debug        Keep scratch files in /tmp
+            --skip-cleanup     Skip post-build cleanup
+            --skip-gcc-check   Skip gcc version matching check
+                               (not recommended)
 """]]
 
 
