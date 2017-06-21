@@ -9,11 +9,11 @@ _What i did today?_
     I could receive the file from the elivepatch_client POST request
     using the RESTful API.
 
-    [[!pygments python content="""
-    def post(self):
-        parse = reqparse.RequestParser()
-        parse.add_argument('file', type=werkzeug.datastructures.FileStorage, location)
-    """]]
+[[!pygments python content="""
+def post(self):
+    parse = reqparse.RequestParser()
+    parse.add_argument('file', type=werkzeug.datastructures.FileStorage, location)
+"""]]
 
     so as now we can get the kernel configuration file, extract if is .gz filename 
     and send it to the elivepatch server.
@@ -25,7 +25,7 @@ _What i did today?_
     This is the example of using kpatch-build:
     kpatch-build/kpatch-build -s /usr/src/linux-4.9.16-gentoo/ -v /usr/src/linux-4.9.16-gentoo/vmlinux examples/test.patch --skip-gcc-check
 
-	[[!pygments bash content="""
+[[!pygments bash content="""
 	gsoc-2017 kpatch (gentoo*) # kpatch-build/kpatch-build --help
 	usage: kpatch-build [options] <patch file>
                 -h, --help         Show this help message
@@ -38,7 +38,7 @@ _What i did today?_
                 --skip-cleanup     Skip post-build cleanup
                 --skip-gcc-check   Skip gcc version matching check
                                    (not recommended)
-	"""]]
+"""]]
 
 
 
