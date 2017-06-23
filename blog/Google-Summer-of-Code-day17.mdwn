@@ -1,0 +1,29 @@
+___Google Summer of Code day 16___
+
+`What was my plan for today?`  
+
+* going on with the code for retriving the livepatch and installing it
+* Ask infra for a server where to install elivepatch sever  
+
+`What i did today?`  
+Sended request for the server that will offer the elivepatch service as talked 
+with my mentor.
+https://bugs.gentoo.org/show_bug.cgi?id=622476
+
+Fixed some pep8 warnings.
+
+Livepatch server is now returning information about the livepatch building status.
+
+Removed basic auth as we will go with SSL.
+
+The client is now sending information about the kernel version when requesting a new build.
+
+The kernel directory under the server is now a livepatch class variable.
+
+
+`what i will do next time?`  
+
+* going on with the code for retriving the livepatch and installing it
+
+
+[[!tag draft ]]
