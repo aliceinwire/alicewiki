@@ -1,0 +1,37 @@
+___Google Summer of Code day 16___
+
+`What was my plan for today?`  
+
+* going on with the code for retriving the livepatch and installing it
+
+`What i did today?`  
+
+
+
+kpatch-build find_dirs function:
+
+[[!pygments shell content="""
+find_dirs() {
+  if [[ -e "$SCRIPTDIR/create-diff-object" ]]; then
+	  # git repo
+	  TOOLSDIR="$SCRIPTDIR"
+	  DATADIR="$(readlink -f $SCRIPTDIR/../kmod)"
+  elif [[ -e "$SCRIPTDIR/../libexec/kpatch/create-diff-object" ]]; then
+	  # installation path
+	  TOOLSDIR="$(readlink -f $SCRIPTDIR/../libexec/kpatch)"
+	  DATADIR="$(readlink -f $SCRIPTDIR/../share/kpatch)"
+  else
+	  return 1
+  fi
+}
+"""]]
+
+
+
+
+`what i will do next time?`  
+
+
+
+
+[[!tag draft ]]
