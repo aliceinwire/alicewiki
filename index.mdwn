@@ -1,7 +1,7 @@
 [[!meta title="Alice Ferrazzi in wired"]]
 
 Alice Ferrazzi is a [Gentoo Linux Developer](https://wiki.gentoo.org/wiki/User:Aliceinwire) and the [Gentoo Kernel Project Leader](https://wiki.gentoo.org/wiki/Project:Kernel),  
-working on Gentoo Ebuild, Eclass and Linux Kernel.  
+usually working on Gentoo Ebuild, Eclass and Linux Kernel.  
 She holds Gentoo study meetings in Japan and organizes the Gentoo booth at various open source events.  
 
 <img src="http://aliceinwire.net/image/alice.jpg" width="400"/>  
