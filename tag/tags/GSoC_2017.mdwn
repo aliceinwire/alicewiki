@@ -1,0 +1,4 @@
+[[!meta title="pages tagged tags/GSoC 2017"]]
+
+[[!inline pages="tagged(tags/GSoC_2017)" actions="no" archive="yes"
+feedshow=10]]
