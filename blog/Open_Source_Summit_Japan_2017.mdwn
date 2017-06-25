@@ -1,15 +1,46 @@
-Open Source Summit Japan 2017 summary
-
-OSS Japan 2017 was a really great experience.
-
+_Open Source Summit Japan 2017 summary_
+  
+OSS Japan 2017 was a really great experience.  
+  
 I sended my paper proposal and waited for a replay, some week after I got a
-invite to partecipate at the Kernel Keynote.
+invite to partecipate at the Kernel Keynote.  
 I thought partecipating at the Kernel Keynote was a good way to talk about 
 Gentoo Kernel Project and how to contribute in the Linux Kernel and Gentoo
-Kernel Project.
-Also my paper got accepted so I could join OSS Japan 2017 as speaker.
+Kernel Project.  
+Also my paper got accepted so I could join OSS Japan 2017 as speaker.  
+It was three really nice days.  
 
-It was three really nice days.
+
+Presentation:
+<img src="http://aliceinwire.net/image/alice.jpg" width="400"/>  
+
+Fast Releasing and Testing of Gentoo Kernel Packages and Future Plans of the Gentoo Kernel Project
+
+My talk was manly about the Gentoo Kernel related Projects past and future  
+specifically about the Gentoo Kernel Continuos Integreting system we are creating:  
+https://github.com/gentoo/Gentoo_kernelCI
+   
+Why is needed:  
+
+ * We need some way for checking the linux-patches commits automatically, can also check pre-commit by pushing to a sandbox branch
+ * Check the patches signatures
+ * Checking the ebuild committed to https://github.com/gentoo/gentoo/commits/master/sys-kernel
+ * Checking the kernel eclass commits
+ * Checking the pull request to the sys-kernel/\*
+
+slides:
+http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf
 
 
-[[!tags draft]]
+Open Source Summit Japan 2017 Kernel Keynote
+<img src="https://farm5.staticflickr.com/4200/34222716463_df340c9278_c.jpg" width="400"/>  
+
+The keynote was with:
+
+
+And revolved about how to contribute to the Linux Kernel.
+
+
+
+
+[[!tag draft]]
