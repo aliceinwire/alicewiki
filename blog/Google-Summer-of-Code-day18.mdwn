@@ -44,6 +44,7 @@ https://github.com/aliceinwire/elivepatch/commit/d26611fb898223f2ea2dcf323078347
 
 
 Now the elivepatch server can call and build the livepatch with kpatch:
+[[!pygments shell content="""
 sudo kpatch-build -s /usr/src/linux-4.10.14-gentoo/ -v /usr/src/linux-4.10.14-gentoo//vmlinux -c config 1.patch --skip-gcc-check
 ERROR: kpatch build failed. Check /root/.kpatch/build.log for more details.
 127.0.0.1 - - [25/Jun/2017 05:27:06] "POST /elivepatch/api/v1.0/build_livepatch HTTP/1.1" 201 -
@@ -54,6 +55,7 @@ checking file fs/exec.c
 Hunk #1 succeeded at 259 (offset 16 lines).
 Reading special section data
 Building original kernel
+"""]]
 
 
 Fixed some minor pep8
