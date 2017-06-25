@@ -66,4 +66,4 @@ Fixed some minor pep8
 
 
 
-[[!tag tags/gentoo ]]
+[[!tag tags/gentoo tags/GSoC_2017 ]]

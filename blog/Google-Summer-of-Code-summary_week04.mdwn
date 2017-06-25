@@ -34,3 +34,5 @@ What I need to do next time:
  * Installing elivepatch to the Gentoo server
  * Fix kpatch-build for automatically work with gentoo-sources
  * Add more features to elivepatch
+
+[[!tag tags/gentoo tags/GSoC_2017 ]]
