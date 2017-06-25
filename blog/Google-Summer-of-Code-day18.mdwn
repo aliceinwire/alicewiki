@@ -64,4 +64,4 @@ Fixed some minor pep8
 
 
 
-[[!tag draft ]]
+[[!tag tags/gentoo ]]
