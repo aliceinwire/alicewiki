@@ -1,0 +1,15 @@
+Open Source Summit Japan 2017 summary
+
+OSS Japan 2017 was a really great experience.
+
+I sended my paper proposal and waited for a replay, some week after I got a
+invite to partecipate at the Kernel Keynote.
+I thought partecipating at the Kernel Keynote was a good way to talk about 
+Gentoo Kernel Project and how to contribute in the Linux Kernel and Gentoo
+Kernel Project.
+Also my paper got accepted so I could join OSS Japan 2017 as speaker.
+
+It was three really nice days.
+
+
+[[!tags draft]]
