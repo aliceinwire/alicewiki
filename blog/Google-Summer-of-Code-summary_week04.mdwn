@@ -1,0 +1,36 @@
+___Google Summer of Code summary week 03___
+
+
+What I did in this week 03 summary:
+
+elivepatch:
+
+ * Created the elivepatch client command line argument parser
+ * Added function for sending patch and configuration files
+ * Divided the call for sending (patch, config) and the call for building the livepatch
+ * made send_file function more generic for sending all kind of files using RESTful api
+ * Cleaned code following pep8
+ * Decided to use only SSL and to don't use basic auth
+ * Sending informations about the kernel version when requesting a livepatch build
+ * We can now build livepatch using the RESTful API
+ * Returning information about the livepatch building status
+
+
+Kpatch:
+
+ * Working on making kpatch-build working also with gentoo with all the features (As now kpatch-build can only automatically build livepatch for Ubuntu, Debian, Red Hat, Fedora)
+
+
+Others:
+
+ * Ask infra for a server for install the elivepatch server
+
+
+What I need to do next time:
+
+ * Finish the function for download the livepatch to the client
+ * Testing elivepatch
+ * Implementing the CVE patch uploader
+ * Installing elivepatch to the Gentoo server
+ * Fix kpatch-build for automatically work with gentoo-sources
+ * Add more features to elivepatch
