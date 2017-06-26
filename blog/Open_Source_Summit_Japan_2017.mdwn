@@ -36,7 +36,10 @@ Open Source Summit Japan 2017 Kernel Keynote
 <img src="https://farm5.staticflickr.com/4200/34222716463_df340c9278_c.jpg" width="400"/>  
 
 The keynote was with:
-
+Greg Kroah-Hartman
+Steven Rostedt
+Dan Williams
+Alice Ferrazzi
 
 And revolved about how to contribute to the Linux Kernel.
 
