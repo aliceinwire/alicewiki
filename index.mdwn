@@ -12,8 +12,7 @@ Things here:
 * [[contact]] info
 * a [[blog]]
 * [Gentoo activity](https://wiki.gentoo.org/wiki/User:Aliceinwire)
-* this wiki [[code]]
-* [Github Code](https://github.com/aliceinwire/) she as written
+* [Code](https://github.com/aliceinwire/) she as written
 * [[elsewhere]] on the web (other web stuff)
 * a [[resume on linkedin|https://linkedin.com/in/aliceinwire]]
 * a [[SandBox]], because wikis are supposed to have them  
