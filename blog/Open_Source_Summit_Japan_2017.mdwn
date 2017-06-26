@@ -43,7 +43,4 @@ Alice Ferrazzi
 
 And revolved about how to contribute to the Linux Kernel.
 
-
-
-
 [[!tag draft]]
