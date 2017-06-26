@@ -11,14 +11,14 @@ Also my paper got accepted so I could join OSS Japan 2017 as speaker.
 It was three really nice days.  
 
 
-Presentation:
+Presentation:  
 <img src="http://aliceinwire.net/image/alice.jpg" width="400"/>  
 
 Fast Releasing and Testing of Gentoo Kernel Packages and Future Plans of the Gentoo Kernel Project
 
 My talk was manly about the Gentoo Kernel related Projects past and future  
 specifically about the Gentoo Kernel Continuos Integreting system we are creating:  
-https://github.com/gentoo/Gentoo_kernelCI
+[https://github.com/gentoo/Gentoo_kernelCI](https://github.com/gentoo/Gentoo_kernelCI)
    
 Why is needed:  
 
@@ -30,37 +30,37 @@ Why is needed:
  * Use Qemu for testing kernel vmlinux correct execution
  
 For any issue or contribution feel free to send here:
-https://github.com/gentoo/Gentoo_kernelCI
+[https://github.com/gentoo/Gentoo_kernelCI](https://github.com/gentoo/Gentoo_kernelCI)
 
 For see Gentoo Kernel CI in action:
-http://kernel1.amd64.dev.gentoo.org:8010
+[http://kernel1.amd64.dev.gentoo.org:8010](http://kernel1.amd64.dev.gentoo.org:8010)
 
 slides:
-http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf
+[http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf](http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf)
 
 
-Open Source Summit Japan 2017
-Keynote: Linux Kernel Panel - Moderated by Alice Ferrazzi, Gentoo Kernel Project Leader 
-<img src="https://farm5.staticflickr.com/4200/34222716463_df340c9278_c.jpg" width="400"/>  
-
-The keynote was with:
-Greg Kroah-Hartman - Fellow, Linux Foundation
-Steven Rostedt - VMware
-Dan Williams - Intel Open Source Technology Center
-Alice Ferrazzi - Gentoo Kernel Project Leader, Gentoo
+Open Source Summit Japan 2017  
+Keynote: Linux Kernel Panel - Moderated by Alice Ferrazzi, Gentoo Kernel Project Leader   
+<img src="https://farm5.staticflickr.com/4200/34222716463_df340c9278_c.jpg" width="400"/>    
+  
+The keynote was with:  
+Greg Kroah-Hartman - Fellow, Linux Foundation  
+Steven Rostedt - VMware  
+Dan Williams - Intel Open Source Technology Center  
+Alice Ferrazzi - Gentoo Kernel Project Leader, Gentoo  
 
 
 
 One interesting part was about how to contribute to the Linux Kernel.  
 The summary was that for contributing to Linux Kernel there is need of a  
 good knowledge of C and running test.  
-Like fuego, kselftest, coccinelle, and many others.
+Like fuego, kselftest, coccinelle, and many others.  
 
 
 
 
 
-Who can find the Gentoo logo in this image:
+Who can find the Gentoo logo in this image:  
 <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/18739093_1569993559677622_3007606940351392013_o.jpg?oh=ea66faf380e39f6037b3ec6c29eafca8&oe=59CDCDF4" width="400"/>  
 
 [[!tag draft]]
