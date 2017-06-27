@@ -1,0 +1,76 @@
+___Google Summer of Code day 20___
+
+`What was my plan for today?`  
+
+* work on the livepatch downloader and make the kpatch creator flexible
+
+`What i did today?`  
+
+* Created .travis.yml for validating changes
+https://github.com/aliceinwire/elivepatch/blob/master/.travis.yml
+* Finished making the live patch downloader
+https://github.com/aliceinwire/elivepatch/commit/6eca2eec3572cad0181b3ce61f521ff40fa85ec1
+* Testing elivepatch
+
+The POC generally works but I had a problem with building the Linux kernel 4.9.29 on my notebook
+One problem with the POC is that still some variable are hard coded.
+
+WARNING: Skipping gcc version matching check (not recommended)
+Skipping cleanup
+Using source directory at /usr/src/linux-4.9.29-gentoo
+Testing patch file
+checking file fs/exec.c
+Hunk #1 succeeded at 238 (offset -5 lines).
+Reading special section data
+Building original kernel
+Building patched kernel
+Extracting new and modified ELF sections
+/usr/libexec/kpatch/create-diff-object: ERROR: exec.o: find_local_syms: 136: find_local_syms for exec.c: found_none
+ERROR: 1 error(s) encountered. Check /root/.kpatch/build.log for more details.
+
+
+the function find_local_syms
+https://github.com/dynup/kpatch/blob/master/kpatch-build/lookup.c#L80
+
+Now i'm rebuilding everything with debug options for see some more useful information
+I'm also thinking to add a debug option to the elivepatch server
+
+One question is if can be useful to work on making a feature for getting the kernel
+version from the Kernel configuration file header.
+
+like this:
+
+.config
+#
+# Automatically generated file; DO NOT EDIT.
+# Linux/x86 4.9.29-gentoo Kernel Configuration
+#
+
+like parsing this for get the version file without need to give it manually.
+
+Another option is to passing it by rest as command line option.
+
+something like -g 4.9.29 
+
+
+Interesting thing is that as now kernel-build have already embedded some way of dealing with most problems,
+and works better with distribution like ubuntu or fedora.
+
+like for example is already copying the .config file and building the kernel with the option that we are giving
+from the rest api.
+cp -f /home/alicef/IdeaProjects/elivepatch/elivepatch_server/config /usr/src/linux-4.9.29-gentoo/.config
+
+and the patch
+cp /home/alicef/IdeaProjects/elivepatch/elivepatch_server/1.patch kpatch.patch
+
+Is also checking the .config for missing configurations.
+grep -q CONFIG_DEBUG_INFO_SPLIT=y /home/alicef/IdeaProjects/elivepatch/elivepatch_server/config
+
+
+`what i will do next time?`  
+* Testing elivepatch
+* Getting the kernel version dynamically
+* Updating kpatch-build for work with Gentoo better
+
+
+[[!tag tags/GSoC_2017 ]]
