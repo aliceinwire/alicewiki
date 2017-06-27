@@ -14,11 +14,11 @@ It was three really nice days.
 __Presentation:__  
 <img src="http://aliceinwire.net/image/alice.jpg" width="400"/>  
 
-Fast Releasing and Testing of Gentoo Kernel Packages and Future Plans of the Gentoo Kernel Project
+Fast Releasing and Testing of Gentoo Kernel Packages and Future Plans of the Gentoo Kernel Project  
 
 My talk was manly about the Gentoo Kernel related Projects past and future  
 specifically about the Gentoo Kernel Continuos Integreting system we are creating:  
-[https://github.com/gentoo/Gentoo_kernelCI](https://github.com/gentoo/Gentoo_kernelCI)
+[https://github.com/gentoo/Gentoo_kernelCI](https://github.com/gentoo/Gentoo_kernelCI)  
    
 Why is needed:  
 
@@ -29,14 +29,14 @@ Why is needed:
  * Checking the pull request to the sys-kernel/\*
  * Use Qemu for testing kernel vmlinux correct execution
  
-For any issue or contribution feel free to send here:
-[https://github.com/gentoo/Gentoo_kernelCI](https://github.com/gentoo/Gentoo_kernelCI)
+For any issue or contribution feel free to send here:  
+[https://github.com/gentoo/Gentoo_kernelCI](https://github.com/gentoo/Gentoo_kernelCI)  
 
-For see Gentoo Kernel CI in action:
-[http://kernel1.amd64.dev.gentoo.org:8010](http://kernel1.amd64.dev.gentoo.org:8010)
+For see Gentoo Kernel CI in action:  
+[http://kernel1.amd64.dev.gentoo.org:8010](http://kernel1.amd64.dev.gentoo.org:8010)  
 
 __slides:__  
-[http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf](http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf)
+[http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf](http://schd.ws/hosted_files/ossjapan2017/39/Gentoo%20Kernel%20recent%20and%20Future%20project.pdf)  
 
 
 __Open Source Summit Japan 2017__  
