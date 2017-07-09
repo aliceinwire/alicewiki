@@ -1,0 +1,29 @@
+___Google Summer of Code day 26___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+After discussion with mentor.
+I need:
+* Availability and replicability of downloading kernel sources. [needed]
+* Represent same kernel sources as the client kernel source (use flags for now and in the future user added patches) [needed]
+* Support multiple request at the same time. [needed]
+* Modularity for adding VM machine or container support. (in the future)
+
+Create overlay for keeping old gentoo-sources ebuild where we will keep retrocompatibility
+for old kernels:
+https://github.com/aliceinwire/gentoo-sources_overlay
+
+Made function for download and get old kernel sources and install sources 
+under the designated temporary folder.
+
+
+`what i will do next time?`  
+
+* Going on improving elivepatch
+
+
+[[!tag draft ]]

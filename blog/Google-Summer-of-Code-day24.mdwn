@@ -1,0 +1,33 @@
+___Google Summer of Code day 24___
+
+`What was my plan for today?`  
+
+* Cleaning code
+* testing it
+* Go on with programming and starting implementing the CVE
+
+`What i did today?`  
+
+* Working with getting the linux kernel version from configuration file
+* Working with parsing CVE repository
+
+I could implement to get the linux kernel version from the configuration file,
+and I'm working on parsing the CVE repository.
+Would also be a nice idea to work with the kpatch scripts for making it Gentoo
+compatible.
+But I also got into one problem, that is we need to find a way to download
+old gentoo-sources ebuild for building old kernel, 
+where in the server there isn't the needed version of kernel sources.
+This depend from how much back compatibility we want to give.
+And with old gentoo-sources we cannot assure that is working.
+Because old gentoo-sources was using different versions of gentoo repository, 
+eclass.
+So is a problem to discuss in the next days.
+
+`what i will do next time?`  
+
+* work on the CVE repository
+* testing it
+
+
+[[!tag draft ]]

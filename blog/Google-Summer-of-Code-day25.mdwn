@@ -1,0 +1,20 @@
+___Google Summer of Code day 24___
+
+`What was my plan for today?`  
+
+* Cleaning code
+* testing and improving elivepatch
+
+`What i did today?`  
+
+As discussed with my mentor I worked on unifying the patch and configuration file 
+RESTful api call.
+And made function for standardize the subrocess commands.
+
+
+`what i will do next time?`  
+
+* testing it and improving elivepatch
+
+
+[[!tag draft ]]

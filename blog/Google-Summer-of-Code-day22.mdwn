@@ -1,0 +1,26 @@
+___Google Summer of Code day 20___
+
+`What was my plan for today?`  
+
+* Testing elivepatch
+* work on making elivepatch support multiple calls
+
+`What i did today?`  
+
+* working on sending the kernel version
+* working on dividing users by UserID
+
+At first connection because the UserID is not present will be
+created and returned by the elivepatch server.
+The client will store the UserID in shelve so that it can
+authenticate next time is inquiring the server.
+By using python UUID I'm assigning different UUID for each user.
+
+By using this we can start supporting multiple calls.
+
+`what i will do next time?`  
+* Testing elivepatch
+* Cleaning code
+
+
+[[!tag draft ]]
