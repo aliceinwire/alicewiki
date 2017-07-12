@@ -15,7 +15,7 @@ https://github.com/aliceinwire/elivepatch/commit/6eca2eec3572cad0181b3ce61f521ff
 The POC generally works but I had a problem with building the Linux kernel 4.9.29 on my notebook
 One problem with the POC is that still some variable are hard coded.
 
-```
+[[!pygments bash content="""
 WARNING: Skipping gcc version matching check (not recommended)
 Skipping cleanup
 Using source directory at /usr/src/linux-4.9.29-gentoo
@@ -28,7 +28,7 @@ Building patched kernel
 Extracting new and modified ELF sections
 /usr/libexec/kpatch/create-diff-object: ERROR: exec.o: find_local_syms: 136: find_local_syms for exec.c: found_none
 ERROR: 1 error(s) encountered. Check /root/.kpatch/build.log for more details.
-```
+"""]]
 
 the function find_local_syms
 https://github.com/dynup/kpatch/blob/master/kpatch-build/lookup.c#L80
