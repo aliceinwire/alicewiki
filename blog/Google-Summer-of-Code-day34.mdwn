@@ -1,0 +1,31 @@
+___Google Summer of Code day 33___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* lpatch added locally
+* fix ebuild directory
+* Static patch and config filename on send
+    This is useful for isolating the api requests using only the uuid as
+    session identifier
+* Removed livepatchStatus and lpatch class configurations.
+    Because we need a request to only be identified by is own UUID,
+    for isolating the transaction.
+* return in case the request with same uuid is already present.
+
+we still have problem about 
+"can'\''t find special struct alt_instr size."
+
+I will investigate it tomorrow
+
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+* Investigating the missing informations in the livepatch
+
+[[!tag draft ]]

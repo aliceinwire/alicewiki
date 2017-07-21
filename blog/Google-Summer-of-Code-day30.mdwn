@@ -1,0 +1,23 @@
+___Google Summer of Code day 29___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* fixing uuid design
+
+moved the uuid generating to the client and read rfc 4122
+
+that states
+"A UUID is 128 bits long, and requires no central registration process."
+
+* made regex function for checking the format of uuid is actually correct.
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+[[!tag draft ]]

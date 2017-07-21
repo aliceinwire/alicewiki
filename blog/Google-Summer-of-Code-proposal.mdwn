@@ -1,0 +1,94 @@
+Alice Ferrazzi  
+March 31st, 2017  
+Japan  
+
+## Proposal
+
+kernel live patch - automatically check and live patching the Kernel
+
+## Abstract
+
+I propose an utility to semi-automatically check the kernel for known security vulnerabilities and live patch the kernel if there is a security risk found.
+
+## Objective/Rationale
+
+The objective of this proposal is to improve the Kernel Project by providing a mechanism to live-patch kernels.  
+This GSoC proposal involves two main tasks:
+
+first task:  
+  
+Currently there is no Kpatch package in Gentoo, which is a system for automatically live patching the kernel.  
+This can became a problem in environments where there is the necessity of tested and working security live patches and there is no possibility to restart the system or use kexec.  
+
+second task:  
+
+The Gentoo Kernel CI is starting to automatize, and consequently speed up, the Gentoo kernel releasing process.  
+Having a working Gentoo Kernel CI is critical for keep up with the new upstream Kernel release style.  
+Moving forward, it is important to integrate the live kernel patching system into the Gentoo Kernel CI.
+As now the Gentoo Kernel stabilization is always taking more time, and Gentoo devs have no time for keeping up with the new fast Kernel upstream releasing system. Because of this we need a way to automatically check and stabilize the Kernel on differents architecture (the most problematic as now is arm).
+Improving the Gentoo Kernel CI means also giving the opportunity to people to share resources for the Gentoo Kernel team. By adding the Gentoo Kernel CI worker in their own machine the Gentoo Kernel CI can use that machine for checking stabilization and helping with the releasing system.
+
+## Design
+
+my work will be to design and create a service for test and deploy security live patch.  
+The live patch will be installed by a security script, that will check the kernel for vulnerability.  
+It will also suggest some available patches to be live installed (that will be managed by a Gentoo server and GPG signed), and only after the user confirmation it will proceed to automatically install the selected live patch.
+
+
+## Deliverables
+
+Upon successful completion the following shall be delivered:  
+1) the proposed utility, and an ebuild to package it;  
+2) (if applicable) libraries separately implementing subsets of the functionality;  
+3) documentation (a manpage specifying (at least) execution options, supported source and item format, and a technical description of the implementation).  
+
+## Timeline
+
+  ``community bonding period``
+
+30.04 - 08.05
+
+ - Getting the needed resources (instances with various architecture) .
+ - package needed packages (kpatch ecc. ecc.).
+
+08.05 - 30.05
+
+ - Designing the Kernel live check system.
+ 
+30.05 - 12.06
+
+ - Creating the system that will check for new CVE,
+ create the kpatch blob and deliver to the target host.
+
+12.06 - 30.06
+
+ - Create the target side software that will manage the live patching.
+
+30.06 - 10.07
+
+ - Adding test cases.
+ - Testing that the Kernel live check system is working correctly.
+ 
+10.07 - 28.07
+
+ - Implementing the testing system of the kernel live check in the Gentoo Kernel CI.
+ - Designing new features for the Gentoo Kernel CI.
+
+29.07 - 29.08
+
+ - Improve Gentoo Kernel CI with new features.
+ - Final Tests and document existing code more thoroughly.
+ 
+## Biography
+
+Alice Ferrazzi is a Gentoo Linux Developer and the Gentoo Kernel Project Leader, working on Gentoo ebuild, eclass writing and kernel patching.  
+She holds Gentoo study meetings in Japan and organizes the Gentoo booth at various open source events.  
+She will be graduating from Tokyo University of Technology and is interested in research opportunities in Japan.  
+
+## Contact info
+
+e-mail: alice.ferrazzi@gmail.com  
+IRC: alicef @ freenode  
+Github: aliceinwire  
+
+[[!tag draft ]]

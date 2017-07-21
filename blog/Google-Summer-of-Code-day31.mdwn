@@ -1,0 +1,30 @@
+___Google Summer of Code day 31___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Dispatcher.py:
+
+* fixed comments
+* added static method for return the kernel path
+* Added todo
+* fixed how to make directory with uuid
+
+livepatch.py
+* fixed docstring
+* removed sudo on kpatch-build
+* fixed comments
+* merged ebuild commands in one on build livepatch
+
+restful.py
+* fixed comment
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+[[!tag draft ]]

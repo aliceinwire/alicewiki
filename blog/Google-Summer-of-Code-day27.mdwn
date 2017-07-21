@@ -1,0 +1,18 @@
+___Google Summer of Code day 27___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* Fixed git clone of the gentoo-sources overlay under a temporary directory
+* Fixed download directories
+* Tested elivepatch
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+
+[[!tag draft ]]
