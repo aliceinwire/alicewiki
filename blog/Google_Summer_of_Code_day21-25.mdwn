@@ -8,7 +8,7 @@ ___Google Summer of Code day 21___
 
 `What I did today?`  
 
-fixing the problems pointed out by my mentor.
+Fixing the problems pointed out by my mentor.
 
 * Fixed software copyright header
 * Fixed popen call
