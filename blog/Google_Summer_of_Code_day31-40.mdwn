@@ -1,0 +1,257 @@
+___Google Summer of Code day 31___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Dispatcher.py:
+
+* fixed comments
+* added static method for return the kernel path
+* Added todo
+* fixed how to make directory with uuid
+
+livepatch.py
+* fixed docstring
+* removed sudo on kpatch-build
+* fixed comments
+* merged ebuild commands in one on build livepatch
+
+restful.py
+* fixed comment
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+___Google Summer of Code day 32___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+client checkers:
+* used os.path.join for ungz function
+* implemented temporary folder using python tempfile
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+
+___Google Summer of Code day 33___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* Working with tempfile for keeping the uncompressed configuration file using
+the appropiate tempfile module.
+* Refactoring and code cleaning.
+* check if the ebuild is present in the overlay before trying to merge it.
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+___Google Summer of Code day 34___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* lpatch added locally
+* fix ebuild directory
+* Static patch and config filename on send
+    This is useful for isolating the api requests using only the uuid as
+    session identifier
+* Removed livepatchStatus and lpatch class configurations.
+    Because we need a request to only be identified by is own UUID,
+    for isolating the transaction.
+* return in case the request with same uuid is already present.
+
+we still have problem about 
+"can'\''t find special struct alt_instr size."
+
+I will investigate it tomorrow
+
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+* Investigating the missing informations in the livepatch
+
+
+___Google Summer of Code day 35___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Kpatch need some special section data for find where to inject the livepatch.
+This special section data existence is checked by kpatch-build in the given vmlinux file.
+The vmlinux file need CONFIG\_DEBUG\_INFO=y for making the debug symbols containing
+the special section data.
+This special section data is found like this:
+
+[[!pygments bash content="""
+# Set state if name matches
+a == 0 && /DW_AT_name.* alt_instr[[:space:]]*$/ {a = 1; next}
+b == 0 && /DW_AT_name.* bug_entry[[:space:]]*$/ {b = 1; next}
+p == 0 && /DW_AT_name.* paravirt_patch_site[[:space:]]*$/ {p = 1; next}
+e == 0 && /DW_AT_name.* exception_table_entry[[:space:]]*$/ {e = 1; next}
+"""]]
+
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+* Investigating the missing informations in the livepatch
+
+
+___Google Summer of Code day 36___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* Fixed livepatch output name for reflecting the static setted patch name
+* module install removed as not needed
+* debug option is now also copying the build.log to the uuid directory, for investigating failed attempt
+* refactored uuid\_dir with uuid in the case where uuid\_dir is not actually containing the full path
+* adding debug\_info to the configuration file if not already present
+    however this setting is only needed for the livepatch creation (not tested yet)
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+* Investigating the missing informations in the livepatch
+
+___Google Summer of Code day 37___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+* Fix return message for cve option 
+* Added different configuration example [4.9.30,4.10.17]
+* Catch gentoo-sources not available error
+* Catch missing livepatch errors on the client
+
+Tested kpatch with patch for kernel 4.9.30 and 4.10.17 and it worked 
+without any problem.
+I checked with coverage for see which code is not used.
+I think we can maybe remove cve option for now as not implemented yet
+and we could use a modular implementation of for it, so the configuration
+could change.
+We need some documentation about elivepatch on the gentoo wiki.
+We need some unittest for making development more smooth and making it 
+more simple to check the working status with github travis.
+
+I talked with kpatch creator and we got some feedback:
+
+“this project could also be used for kpatch testing :)  
+imagine instead of just loading the .ko, the client were to kick off 
+a series of tests and report back.”
+
+“why bother a production or tiny machine when you might have a 
+patch-building server”
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+* Investigating the missing informations in the livepatch
+
+
+___Google Summer of Code day 38___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Meeting with mentor summary
+
+What we will do next:
+- incremental patch tracking on the client side
+- CVE security vulnaribility checker
+- dividing the repository
+- ebuild
+- documentation [optional]
+- modularity [optional]
+
+Kpatch work:
+- Started to make the incremental patch feature
+- Tested kpatch for permission issue
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+* Investigating the missing informations in the livepatch
+
+
+___Google Summer of Code day 39___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Meeting with mentor summary
+
+elivepatch work:
+- working on incremental patch features design and implementatio
+    - putting patch files under /var/run/elivepatch
+    - ordering patch by numbers
+    - cleaning folder when the machine is restarted
+    - sending the patches to the server in order
+- cleaning client terminal output by catching the exceptions
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+
+___Google Summer of Code day 40___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Meeting with mentor 
+
+summary for elivepatch work:
+- working on incremental patch manager
+- cleaning client terminal output by catching the exceptions
+
+Making and Testing patch manager
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
