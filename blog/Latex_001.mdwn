@@ -1,0 +1,13 @@
+This is manly a memo for remember each time which packages are needed for Japanese.
+
+Usually I use xetex with cjk for write latex document on Gentoo
+this is done by adding xetex and cjk support to texlive.
+
+app-text/texlive cjk xetex
+app-text/texlive-core cjk xetex
+
+for platex is needed to install
+
+dev-texlive/texlive-langjapanese
+
+[[!tag tags/gentoo ]]
