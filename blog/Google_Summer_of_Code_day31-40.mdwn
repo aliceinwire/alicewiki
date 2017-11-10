@@ -255,3 +255,5 @@ Making and Testing patch manager
 `what I will do next time?`  
 
 * testing and improving elivepatch
+
+[[!tag tags/GSoC_2017  tags/gentoo ]]
