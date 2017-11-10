@@ -1,0 +1,238 @@
+___Google Summer of Code day 41___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+elivepatch work:
+- working on making the code for sending a unknown number of files with Werkzeug
+
+Making and Testing patch manager
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+
+___Google Summer of Code day 42___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+elivepatch work:
+* Fixing sending multiple file using requests
+I'm making the script for incremental add patches but I'm stuck on this requests problem.
+
+looks like I cannot concatenate files like this
+files = {'patch': ('01.patch', patch_01, 'multipart/form-data', {'Expires': '0'}),
+				   ('02.patch', patch_01, 'multipart/form-data', {'Expires': '0'}),
+				   ('03.patch', patch_01, 'multipart/form-data', {'Expires': '0'}),
+		 'config': ('config', open(temporary_config.name, 'rb'), 'multipart/form-data', {'Expires': '0'})}
+or like this:
+files = {'patch': ('01.patch', patch_01, 'multipart/form-data', {'Expires': '0'}),
+		 'patch': ('02.patch', patch_01, 'multipart/form-data', {'Expires': '0'}),
+		 'patch': ('03.patch', patch_01, 'multipart/form-data', {'Expires': '0'}),
+		 'config': ('config', open(temporary_config.name, 'rb'), 'multipart/form-data', {'Expires': '0'})}
+getting
+AttributeError: 'tuple' object has no attribute 'read'
+
+looks like requests cannot manage to send data with same key
+but the server part of flask-restful is using parser.add_argument('patch', action='append')
+for concatenate more arguments togheter.
+and it suggest to send the informations like this:
+curl http://api.example.com -d "patch=bob" -d "patch=sue" -d "patch=joe"
+
+Unfortunatly as now I'm still trying to understand how I can do it with requests.
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+
+___Google Summer of Code day 43___
+
+`What was my plan for today?`  
+
+* making the first draft of incremental patches feature
+
+`What i did today?`  
+
+elivepatch work:
+* Changed send\_file for manage more patches at a time
+* Refactored functions name for reflecting the incremental patches change
+* Made function for list patches in the eapply\_user portage user patches folder directory and
+    temporary folder patches reflecting the applied livepatches.
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+___Google Summer of Code day 44___
+
+`What was my plan for today?`  
+
+* making the first draft of incremental patches feature
+
+`What i did today?`  
+
+elivepatch work:
+* renamed command client function as internal function
+* put togheter the client incremental patch sender function
+
+`what i will do next time?`  
+
+* make the server side incremtal patch part and test it
+
+___Google Summer of Code day 45___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch
+
+`What i did today?`  
+
+Meeting with mentor summary
+
+elivepatch work:
+- working on incremental patch features design and implementatio
+    - putting patch files under /var/run/elivepatch
+    - ordering patch by numbers
+    - cleaning folder when the machine is restarted
+    - sending the patches to the server in order
+- cleaning client terminal output by catching the exceptions
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+___Google Summer of Code day 46___
+
+`What was my plan for today?`  
+
+* making the first draft of incremental patches feature
+
+`What i did today?`  
+
+elivepatch work:
+* testing elivepatch with incremental patches
+* code refactoring
+
+`what i will do next time?`  
+
+* make the server side incremtal patch part and test it
+
+
+___Google Summer of Code day 47___
+
+`What was my plan for today?`
+
+* making the first draft of incremental patches feature
+
+`What i did today?`
+
+elivepatch work:
+* testing elivepatch with incremental patches
+* trying to make some way for make testing more fast, I'm thinking
+something like unit test and integration testing.
+* merged build\_livepatch with send\_files as it can reduce the steps
+for making the livepatch and help making it more isolated.
+* going on writing the incremental patch
+
+Building with kpatch-build takes usually too much time, this is making
+testing parts where
+building live patch is needed, long and complicated.
+Would probably be better to add some unit/integration testing for keep
+each task/function under control without needing to build live patches
+every time.
+any thoughts?
+
+
+`what i will do next time?`
+
+* make the server side incremental patch part and test it
+
+
+___Google Summer of Code day 48___
+
+`What was my plan for today?`
+
+* making the first draft of incremental patches feature
+
+`What i did today?`
+
+elivepatch work:
+* added PORTAGE\_CONFIGROOT for set the path from there get the incremental
+patches.
+* cannot download kernel sources to /usr/portage/distfiles/ 
+* saving created livepatch and patch to the client but sending only the incremental patches and patch to the elivepatch server
+* Cleaned output from bash command
+
+`what i will do next time?`
+
+* make the server side incremental patch part and test it
+
+___Google Summer of Code day 49___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch incremental patches feature
+
+`What i did today?`  
+
+1) we need a way for having old genpatches. 
+   mpagano made a script for saving all the genpatches and they are saved here:
+   http://dev.gentoo.org/~mpagano/genpatches/tarballs/
+   I think we can redirect the ebuild on our overlay for get the tarballs from there.
+
+2) kpatch can work with initrd
+
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+
+___Google Summer of Code day 50___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch incremental patches feature
+
+`What i did today?`  
+ 
+* refactoring code
+* starting writing first draft for the automatical kernel livepatching system
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+___Google Summer of Code day 51___
+
+`What was my plan for today?`  
+
+* testing and improving elivepatch incremental patches feature
+
+`What i did today?`  
+ 
+* checking eapply\_user
+    eapply\_user is using patch
+
+* writing elivepatch wiki page
+    https://wiki.gentoo.org/wiki/User:Aliceinwire/elivepatch
+
+
+`what i will do next time?`  
+
+* testing and improving elivepatch
+
+[[!tag tags/GSoC_2017  tags/gentoo ]]
