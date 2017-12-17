@@ -6,17 +6,24 @@ We can use Ftrace for tracing kernel events.
 We do this by enabling ftrace:
 
 Enable ftrace through debugfs. 
+
+[[!pygments bash content="""
 cd /sys/kernel/debug/tracing
 echo 'raw_syscalls' > set_event # trace all syscall
 echo 1 > tracing_on
+"""]]
 
 we can see a list of available event doing:
 cat available_events
 
 starting trace:
+
+[[!pygments bash content="""
 echo 1 > tracing_on
 cat trace
+"""]]
 
+[[!pygments bash content="""
 example:
 ----------------------
 # tracer: nop
@@ -40,10 +47,11 @@ example:
              zsh-6912  [007] .... 1625844.488713: sys_enter: NR 13(16, 7ffde4bf2ad0, 7ffde4bf2b70, 8, 7ffde4bf2cc0, 0)
              zsh-6912  [007] .... 1625844.488714: sys_exit: NR 13 = 0
              zsh-6912  [007] .... 1625844.488714: sys_enter: NR 13(15, 7ffde4bf2ad0, 7ffde4bf2b70, 8, 7ffde4bf2cc0, 0)
-
+"""]]
 
 or 
 
+[[!pygments bash content="""
 echo function_graph > current_tracer
 cat trace
 
@@ -102,12 +110,15 @@ cat trace
   5)               |      rcu_irq_exit() {
   5)   0.052 us    |        rcu_eqs_enter_common();
   5)   0.420 us    |      }
-
+"""]]
 
 
 stopping tracing:
+
+[[!pygments bash content="""
 echo 0 > tracing_on
 echo > trace
 echo > set_event
+"""]]
 
 [[!tag draft ]]
