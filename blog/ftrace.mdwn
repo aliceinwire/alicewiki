@@ -1,0 +1,113 @@
+[[!meta title="Ftrace live patch"]]
+
+Ftrace is a tracing framework for the linux kernel.
+We can use Ftrace for tracing kernel events.
+
+We do this by enabling ftrace:
+
+Enable ftrace through debugfs. 
+cd /sys/kernel/debug/tracing
+echo 'raw_syscalls' > set_event # trace all syscall
+echo 1 > tracing_on
+
+we can see a list of available event doing:
+cat available_events
+
+starting trace:
+echo 1 > tracing_on
+cat trace
+
+example:
+----------------------
+# tracer: nop
+#
+#                              _-----=> irqs-off
+#                             / _----=> need-resched
+#                            | / _---=> hardirq/softirq
+#                            || / _--=> preempt-depth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |       |   ||||       |         |
+             zsh-6912  [007] .... 1625844.488639: sys_exit: NR 56 = 0
+             zsh-6912  [007] .... 1625844.488692: sys_enter: NR 14(1, 7ffde4bf2d40, 7ffde4bf2ca0, 8, 7f2d12304f00, 0)
+             zsh-6912  [007] .... 1625844.488693: sys_exit: NR 14 = 0
+             zsh-6912  [007] .... 1625844.488705: sys_enter: NR 3 (b, 7ffde4bf2d40, c, 8, 7f2d12304f00, 0)
+             zsh-6912  [007] .... 1625844.488707: sys_exit: NR 3 =0
+             zsh-6912  [007] .... 1625844.488707: sys_enter: NR 33(c, 1, c, 8, 7f2d12304f00, 0)
+             zsh-6912  [007] .... 1625844.488708: sys_exit: NR 33 = 1
+             zsh-6912  [007] .... 1625844.488709: sys_enter: NR 3 (c, c, 1217ec9, 8, 7f2d12304f00, 0)
+             zsh-6912  [007] .... 1625844.488709: sys_exit: NR 3 =0
+             zsh-6912  [007] .... 1625844.488713: sys_enter: NR 13(16, 7ffde4bf2ad0, 7ffde4bf2b70, 8, 7ffde4bf2cc0, 0)
+             zsh-6912  [007] .... 1625844.488714: sys_exit: NR 13 = 0
+             zsh-6912  [007] .... 1625844.488714: sys_enter: NR 13(15, 7ffde4bf2ad0, 7ffde4bf2b70, 8, 7ffde4bf2cc0, 0)
+
+
+or 
+
+echo function_graph > current_tracer
+cat trace
+
+# tracer: function_graph
+#
+# CPU  DURATION                  FUNCTION CALLS
+# |     |   |                     |   |   |   |
+  5)               |  ktime_get() {
+  5)   0.316 us    |    read_hpet();
+  5)   0.778 us    |  }
+  5)   0.040 us    |  sched_idle_set_state();
+  5)   ==========> |
+  5)               |  smp_call_function_interrupt() {
+  5)               |    irq_enter() {
+  5)               |      rcu_irq_enter() {
+  5)   0.042 us    |        rcu_dynticks_eqs_exit();
+  5)   0.476 us    |      }
+  5)               |      tick_irq_enter() {
+  5)   0.048 us    |        tick_check_oneshot_broadcast_this_cpu();
+  5)               |        ktime_get() {
+  5)   0.742 us    |          read_hpet();
+  5)   1.229 us    |        }
+  5)               |        update_ts_time_stats() {
+  5)   0.041 us    |          nr_iowait_cpu();
+  5)   0.419 us    |        }
+  5)               |        ktime_get() {
+  5)   0.951 us    |          read_hpet();
+  5)   1.302 us    |        }
+  5)   4.413 us    |      }
+  5)               |      _local_bh_enable() {
+  5)   0.042 us    |        __local_bh_enable();
+  5)   0.399 us    |      }
+  5)   6.432 us    |    }
+  5)               |    generic_smp_call_function_single_interrupt() {
+  5)   0.230 us    |      flush_smp_call_function_queue();
+  5)   0.587 us    |    }
+  5)               |    irq_exit() {
+  5)   0.080 us    |      idle_cpu();
+  5)               |      tick_nohz_irq_exit() {
+  5)               |        __tick_nohz_idle_enter() {
+  5)               |          ktime_get() {
+  5)   0.896 us    |            read_hpet();
+  5)   1.279 us    |          }
+  5)   0.078 us    |          rcu_needs_cpu();
+  5)               |          get_next_timer_interrupt() {
+  5)   0.044 us    |            _raw_spin_lock();
+  5)   0.210 us    |            __next_timer_interrupt();
+  5)               |            hrtimer_get_next_event() {
+  5)   0.046 us    |              _raw_spin_lock_irqsave();
+  5)   0.050 us    |              _raw_spin_unlock_irqrestore();
+  5)   0.788 us    |            }
+  5)   2.101 us    |          }
+  5)   0.041 us    |          timekeeping_max_deferment();
+  5)   4.925 us    |        }
+  5)   5.262 us    |      }
+  5)               |      rcu_irq_exit() {
+  5)   0.052 us    |        rcu_eqs_enter_common();
+  5)   0.420 us    |      }
+
+
+
+stopping tracing:
+echo 0 > tracing_on
+echo > trace
+echo > set_event
+
+[[!tag draft ]]
