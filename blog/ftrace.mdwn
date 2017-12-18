@@ -121,4 +121,136 @@ echo > trace
 echo > set_event
 """]]
 
+by checking *klp* functions we can see what kernel livepatch is traing to do when loading a livepatch
+
+This is when we do:
+
+# insmod livepatch-kpatch.ko
+
+[[!pygments bash content="""
+
+ 0)   bash-3561    =>   bash-2678
+ ------------------------------------------
+
+ 0)   0.000 us    |  klp_copy_process();
+ ------------------------------------------
+ 0)   bash-2678    =>  insmod-24160
+ ------------------------------------------
+
+ 0)               |  klp_module_coming() {
+ 0)               |    mutex_lock() {
+ 0)   0.000 us    |      _cond_resched();
+ 0)   0.000 us    |    }
+ 0)   0.000 us    |    mutex_unlock();
+ 0)   0.000 us    |  }
+ ------------------------------------------
+ 0)  insmod-24160  =>   udevd-1475
+ ------------------------------------------
+
+ 0)   0.000 us    |  klp_copy_process();
+ ------------------------------------------
+ 0)   udevd-1475   =>  insmod-24160
+ ------------------------------------------
+
+ 0)               |  klp_register_patch() {
+ 0)               |    printk() {
+ 0)               |      vprintk_func() {
+ 0)               |        vprintk_default() {
+ 0)               |          vprintk_emit() {
+ 0)   0.000 us    |            __printk_safe_enter();
+ 0)   0.000 us    |            _raw_spin_lock();
+ 0)               |            log_store() {
+ 0)   0.000 us    |              log_make_free_space();
+ 0)   0.000 us    |            }
+ 0)   0.000 us    |            __printk_safe_exit();
+ 0)               |            __down_trylock_console_sem.isra.19() {
+ 0)   0.000 us    |              __printk_safe_enter();
+ 0)               |              down_trylock() {
+ 0)   0.000 us    |                _raw_spin_lock_irqsave();
+ 0)   0.000 us    |                _raw_spin_unlock_irqrestore();
+ 0)   0.000 us    |              }
+ 0)   0.000 us    |              __printk_safe_exit();
+ 0)   0.000 us    |            }
+ 0)   0.000 us    |            console_trylock.part.20();
+ 0)               |            console_unlock() {
+ 0)   0.000 us    |              __printk_safe_enter();
+ 0)   0.000 us    |              _raw_spin_lock();
+ 0)               |              __up_console_sem.isra.18() {
+ 0)   0.000 us    |                __printk_safe_enter();
+ 0)               |                up() {
+ 0)   0.000 us    |                  _raw_spin_lock_irqsave();
+ 0)   0.000 us    |                  _raw_spin_unlock_irqrestore();
+ 0)   0.000 us    |                }
+ 0)   0.000 us    |                __printk_safe_exit();
+ 0)   0.000 us    |              }
+ 0)   0.000 us    |              _raw_spin_lock();
+ 0)   0.000 us    |              __printk_safe_exit();
+ 0)   0.000 us    |            }
+ 0)   0.000 us    |          }
+ 0)   0.000 us    |        }
+ 0)   0.000 us    |      }
+ 0)   0.000 us    |    }
+ 0)   0.000 us    |  }
+ 0)               |  klp_module_going() {
+ 0)               |    mutex_lock() {
+ 0)   0.000 us    |      _cond_resched();
+ 0)   0.000 us    |    }
+ 0)   0.000 us    |    klp_cleanup_module_patches_limited();
+ 0)   0.000 us    |    mutex_unlock();
+ 0)   0.000 us    |  }
+ 0)               |  klp_module_coming() {
+ 0)               |    mutex_lock() {
+ 0)   0.000 us    |      _cond_resched();
+ 0)   0.000 us    |    }
+ 0)   0.000 us    |    mutex_unlock();
+ 0)   0.000 us    |  }
+ 0)               |  klp_register_patch() {
+ 0)               |    printk() {
+ 0)               |      vprintk_func() {
+ 0)               |        vprintk_default() {
+ 0)               |          vprintk_emit() {
+ 0)   0.000 us    |            __printk_safe_enter();
+ 0)   0.000 us    |            _raw_spin_lock();
+ 0)               |            log_store() {
+ 0)   0.000 us    |              log_make_free_space();
+ 0)   0.000 us    |            }
+ 0)   0.000 us    |            __printk_safe_exit();
+ 0)               |            __down_trylock_console_sem.isra.19() {
+ 0)   0.000 us    |              __printk_safe_enter();
+ 0)               |              down_trylock() {
+ 0)   0.000 us    |                _raw_spin_lock_irqsave();
+ 0)   0.000 us    |                _raw_spin_unlock_irqrestore();
+ 0)   0.000 us    |              }
+ 0)   0.000 us    |              __printk_safe_exit();
+ 0)   0.000 us    |            }
+ 0)   0.000 us    |            console_trylock.part.20();
+ 0)               |            console_unlock() {
+ 0)   0.000 us    |              __printk_safe_enter();
+ 0)   0.000 us    |              _raw_spin_lock();
+ 0)               |              __up_console_sem.isra.18() {
+ 0)   0.000 us    |                __printk_safe_enter();
+ 0)               |                up() {
+ 0)   0.000 us    |                  _raw_spin_lock_irqsave();
+ 0)   0.000 us    |                  _raw_spin_unlock_irqrestore();
+ 0)   0.000 us    |                }
+ 0)   0.000 us    |                __printk_safe_exit();
+ 0)   0.000 us    |              }
+ 0)   0.000 us    |              _raw_spin_lock();
+ 0)   0.000 us    |              __printk_safe_exit();
+ 0)   0.000 us    |            }
+ 0)   0.000 us    |          }
+ 0)   0.000 us    |        }
+ 0)   0.000 us    |      }
+ 0)   0.000 us    |    }
+ 0)   0.000 us    |  }
+ 0)               |  klp_module_going() {
+ 0)               |    mutex_lock() {
+ 0)   0.000 us    |      _cond_resched();
+ 0)   0.000 us    |    }
+ 0)   0.000 us    |    klp_cleanup_module_patches_limited();
+ 0)   0.000 us    |    mutex_unlock();
+ 0)   0.000 us    |  }
+"""]]
+
+
 [[!tag draft ]]
