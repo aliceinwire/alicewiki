@@ -112,6 +112,20 @@ cat trace
   5)   0.420 us    |      }
 """]]
 
+in this case I enabled smp for use on qemu cpu, smp stand for symmetric multiprocessing and is defined in the kernel:
+
+[[!pygments bash content="""
+__visible void __irq_entry smp_call_function_interrupt(struct pt_regs *regs)
+{
+	ipi_entering_ack_irq();
+	trace_call_function_entry(CALL_FUNCTION_VECTOR);
+	inc_irq_stat(irq_call_count);
+	generic_smp_call_function_interrupt();
+	trace_call_function_exit(CALL_FUNCTION_VECTOR);
+	exiting_irq();
+}
+"""]]
+
 
 stopping tracing:
 
