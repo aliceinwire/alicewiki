@@ -2,10 +2,11 @@ ___Gentoo has been accepted as a Google Summer of Code 2018 mentoring organizati
 
 Gentoo has been accepted into the Google Summer of Code 2018!
   
-Mentors:  
-If you want to mentor some projects on Gentoo GSoC 2018 please add
+Contacts:  
+If you want to help in any way with Gentoo GSoC 2018 please add
 yourself here [1] as soon as possible, is important!.
 Someone from the Gentoo GSoC team will contact you back, as soon as possible.
+We are always searching for people willing to help with Gentoo GSoC 2018!
   
 Students:  
 If you are a student and want to spend your summer on Gentoo projects
