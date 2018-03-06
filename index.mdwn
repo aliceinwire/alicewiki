@@ -12,7 +12,8 @@ Things here:
 * [[contact]] info
 * a [[blog]]
 * [Gentoo activity](https://wiki.gentoo.org/wiki/User:Aliceinwire)
-* [Talks and Presentations](https://wiki.gentoo.org/wiki/User:Aliceinwire/Talks)
+* [Talks and presentations](https://wiki.gentoo.org/wiki/User:Aliceinwire/Talks)
+* [Papers and posters](https://wiki.gentoo.org/wiki/User:Aliceinwire/Papers)
 * [code](https://github.com/aliceinwire/) she has written
 * [[elsewhere]] on the web (other web stuff)
 * a [[resume on linkedin|https://linkedin.com/in/aliceinwire]]
