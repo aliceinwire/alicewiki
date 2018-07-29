@@ -3,7 +3,11 @@ ___Gentoo kernel meeting 2017-07-20 commented summary___
 This is the commented summary of the first Gentoo kernel meeting,
 so there are also personal opinions.
 
-First topic that we talked about was inerent to Gentoo kernel CI,
+First topic that we talked about was inerent to Gentoo kernel CI.
+Gentoo kernel ci is the continuos integrated system that is checking
+packages undes sys-kernel/ and kernel related eclasses. 
+Currently Gentoo kernel ci is using buildbot and qemu with 
+The first discussion was about  
 
 
 
