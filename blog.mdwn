@@ -1,7 +1,7 @@
 [[!meta title="blog"]]
 [[!template id=note text="""
-[[!aggregate expirecount=5 name="alicef" url="https://twitter.com/aliceinwire"
-feedurl="http://wtf.roflcopter.fr/twitter-rss/user/aliceinwire.xml"]]
+[[!aggregate expirecount=5 name="alicef" url="https://twitter.com/aliceferrazzi"
+feedurl="http://wtf.roflcopter.fr/twitter-rss/user/aliceferrazzi.xml"]]
 [[!inline pages="internal(./blog/alicef/*)" template=microblog show=5 feeds=no]] """]]
 
 
