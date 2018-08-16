@@ -6,26 +6,26 @@ The meeting log can be found here[6].
   
 Today meeting topic can be seen here[1].  
   
-First topic that we talked about was inerent to Gentoo kernel CI.  
-Gentoo kernel ci is the continuos integrated system that is checking  
-packages undes sys-kernel/ and kernel related eclasses.  
-Currently Gentoo kernel ci is using buildbot and qemu with   
+The first topic that we talked about was inherent to Gentoo kernel CI.  
+Gentoo kernel ci is the continuous integration system that is checking  
+packages under sys-kernel/ and kernel related eclasses.  
+Currently, Gentoo kernel ci is using buildbot and qemu with   
 The first discussion was about adding lava test to Gentoo kernel CI,  
-the rationale is that we can delegate testing and logs to a ad-hoc tool,  
-instead of rebuild our own.  
+the rationale is that we can delegate testing and logs to an ad-hoc tool,  
+instead of rebuilding our own.  
 This can make less code for us to maintain and have good quality testing.  
-Having a working and proactive Gentoo kernel Continuos integration system  
-can help giving more high quality kernel sources package, reducing   
+Having a working and proactive Gentoo kernel Continuous integration system  
+can help giving more high-quality kernel sources package, reducing   
 human errors and faster stabilization.  
   
 The discussion went on integrating Gentoo kernel ci with lava (lava is the linaro   
 kernel testing suite for arm board/qemu).  
   
-One of the problem of buildbot(used for automatizing Gentoo kernel ci) is that  
-at the moment some failure are not cached correctly.  
+One of the problems of buildbot(used for automatizing Gentoo kernel ci) is that  
+at the moment some failure is not cached correctly.  
 The hope is that lava can give a more consistent output to be parsed by Gentoo Kernel  
 CI buiildbot.  
-Also lava have already experience on managing ARM boards (using remote power switch for  
+Also, lava have already experience in managing ARM boards (using remote power switch for  
 example).   
 One lava problem is that is using jinja2 for configuring the ARM boards.  
 Example of a lava jinja2 template[2].   
@@ -34,12 +34,12 @@ Another example with my arm board[3].
 Gentoo Kernel CI todo list:   
 - failing test have to FAIL  
 - lava? arm board? qemu?  
-- Gentoo need to have full boot test  
+- Gentoo needs to have full boot test  
 - mounting additional disks for test kernel crypto  
 - auto stabilize with override option  
 - change Gentoo kernel CI name (is too long!)  
 - testing kernel build with different gcc chains  
-- send report to upstream  
+- send a report to upstream  
 - testing eclasses with Gentoo kernel CI  
   
 - The result of the discussion is that we need to research more about lava,  
@@ -56,16 +56,16 @@ More difficult would be to integrate Gentoo Kernel ci with LPT.
   
 Next topic went to documentation about Gentoo kernel ci,  
 as now the documentation is in Gentoo wiki[4] under the Gentoo Kernel project,  
-unfortunately the space under the Gentoo Kernel project can only be edited  
+unfortunately, the space under the Gentoo Kernel project can only be edited  
 by Gentoo kernel developers.   
-For attract contributors and simplify to edit the wiki,   
-I started the wiki on the github Gentoo kernel ci repository [5].  
+To attract contributors and simplify to edit the wiki,   
+I started the wiki on the GitHub Gentoo kernel ci repository [5].  
   
 - We need to work in the eclass more.  
 - port eclass to EAPI7  
   
-Using Gentoo Kernel ci with a gentoo kernel overlay for tesing packages before sending  
-it to the gentoo repository.  
+Using Gentoo Kernel ci with a Gentoo kernel overlay for testing packages before sending  
+it to the Gentoo repository.  
 
 Check if merging from an overlay is making things more complicated or not.  
   
@@ -75,12 +75,12 @@ Using and testing in the overlay would help, but make more difficult to get new
 kernels for Gentoo users.  
   
 last topic was to move genpatches website to the wiki.  
-From the meeting it come out interest on having a wiki if we can manage it using git.  
-Because of this necessity the actual Gentoo mediawiki is not enough.  
+From the meeting, it comes out interest on having a wiki if we can manage it using git.  
+Because of this necessity, the actual Gentoo MediaWiki is not enough.  
 looks like is a necessity from 2007 -> bug 176186 [6]  
   
   
-Finally we had the open table at the meeting.  
+Finally, we had the open table at the meeting.  
   
 Kuzetsa asked about making a initramfs for at least run kselftest.  
   
@@ -91,8 +91,6 @@ Kuzetsa asked about making a initramfs for at least run kselftest.
 [4] https://wiki.gentoo.org/wiki/Project:Kernel/Kernel_CI  
 [5] https://github.com/gentoo/Gentoo_kernelCI/wiki   
 [6] https://bugs.gentoo.org/176186  
-  
-[music]  
-ODESZA - Across The Room (feat. Leon Bridges) [Tycho Remix]  
+
 
 [[!tag draft ]]
