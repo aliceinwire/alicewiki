@@ -61,25 +61,36 @@ by Gentoo kernel developers.
 For attract contributors and simplify to edit the wiki, 
 I started the wiki on the github Gentoo kernel ci repository [5].
 
-
 - We need to work in the eclass more.
 - port eclass to EAPI7
 
 Using Gentoo Kernel ci with a gentoo kernel overlay for tesing packages before sending
 it to the gentoo repository.
 
-Check if merging from a overlay is making thinkgs more complicated or not.
+Check if merging from a overlay is making things more complicated or not.
+
+maybe better to use the overlay only for specifically and difficult changes.
+
+Using and testing in the overlay would help, but make more difficult to get new 
+kernels for Gentoo users.
+
+last topic was to move genpatches website to the wiki.
+From the meeting it come out interest on having a wiki if we can manage it using git.
+Because of this necessity the actual Gentoo mediawiki is not enough.
+looks like is a necessity from 2007 -> bug 176186 [6]
 
 
+Finally we had the open table at the meeting.
 
+Kuzetsa asked about making a initramfs for at least run kselftest.
 
-Using lava with Gentoo kernel ci
 
 [1] https://wiki.gentoo.org/wiki/Project:Kernel/meetings/2018_07_20
 [2] https://validation.linaro.org/static/docs/v2/pipeline-admin.html#updating-device-dictionary
 [3] https://gist.githubusercontent.com/aliceinwire/21d831185ab8ab7d5b01c3d29949b298/raw/c40d515ea92e56bbb10f5ffac63e4b35fed9ae38/gistfile1.txt
 [4] https://wiki.gentoo.org/wiki/Project:Kernel/Kernel_CI
 [5] https://github.com/gentoo/Gentoo_kernelCI/wiki 
+[6] https://bugs.gentoo.org/176186
 
 [music]
 ODESZA - Across The Room (feat. Leon Bridges) [Tycho Remix]
